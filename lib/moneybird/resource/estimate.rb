@@ -40,22 +40,5 @@ module Moneybird::Resource
       notes
       attachments
     )
-
-    class Service
-      attr_reader :client, :administration_id
-
-      def initialize(client, administration_id)
-        @client = client
-        @administration_id = administration_id
-      end
-
-      def all
-        result = client.get("#{administration_id}/estimates")
-
-        JSON.parse(result.body).map do |invoice|
-          Estimate.new(self, invoice)
-        end
-      end
-    end
   end
 end

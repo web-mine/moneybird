@@ -18,6 +18,8 @@ require "moneybird/service/sales_invoice"
 require "moneybird/service/tax_rate"
 require "moneybird/service/identity"
 require "moneybird/service/product"
+require "moneybird/service/workflow"
+require "moneybird/service/webhook"
 
 require "moneybird/client"
 
