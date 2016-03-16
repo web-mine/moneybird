@@ -5,10 +5,18 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
-      description
-      price
-      tax_rate_id
-      ledger_account_id
+      company_name
+      city
+      country
+      zipcode
+      address1
+      address2
+      email
+      phone
+      bank_account_name
+      bank_account_number
+      bank_account_bic
+      custom_fields
       created_at
       updated_at
     )
@@ -31,5 +39,3 @@ module Moneybird::Resource
     end
   end
 end
-
-
