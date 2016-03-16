@@ -1,0 +1,21 @@
+[
+  {
+    "id": "143274080523518979",
+    "company_name": "Parkietje B.V.",
+    "city": "Den Haag",
+    "country": "NL",
+    "zipcode": "4321XY",
+    "address1": "Brouwersplein 62",
+    "address2": null,
+    "email": "service@example.com",
+    "phone": "1234-5678900",
+    "bank_account_name": "Foobar B.V.",
+    "bank_account_number": "NL80TEST0252789466",
+    "bank_account_bic": null,
+    "custom_fields": [
+
+    ],
+    "updated_at": "2015-12-23T07:47:12.494Z",
+    "created_at": "2015-12-23T07:47:12.494Z"
+  }
+]

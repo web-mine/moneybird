@@ -1,0 +1,204 @@
+[
+  {
+    "id": "143273986166359047",
+    "contact_id": "143273986042627076",
+    "contact": {
+      "id": "143273986042627076",
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "attention": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "email": "info@example.com",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "created_at": "2015-12-23T07:45:42.391Z",
+      "updated_at": "2015-12-23T07:45:42.391Z",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "estimate_id": "2015-0001",
+    "workflow_id": "143273834790782070",
+    "document_style_id": "143273834854745210",
+    "identity_id": "143273834567435375",
+    "state": "open",
+    "estimate_date": "2015-12-23",
+    "due_date": "2016-01-06",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "exchange_rate": "1.0",
+    "discount": "0.0",
+    "original_estimate_id": null,
+    "show_tax": true,
+    "sign_online": true,
+    "sent_at": "2015-12-23",
+    "accepted_at": null,
+    "rejected_at": null,
+    "archived_at": null,
+    "created_at": "2015-12-23T07:45:42.509Z",
+    "updated_at": "2015-12-23T07:45:42.879Z",
+    "pre_text": "Hello, here is your quote",
+    "post_text": "Please sign it",
+    "details": [
+      {
+        "id": "143273986173699080",
+        "tax_rate_id": "143273834510812265",
+        "ledger_account_id": "143273834460480615",
+        "amount": "1 x",
+        "description": "Project X",
+        "price": "300.0",
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2015-12-23T07:45:42.517Z",
+        "updated_at": "2015-12-23T07:45:42.749Z"
+      }
+    ],
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "url": "http://test.host/123/estimates/92c5ecdb01f3ba9c3c8514798746fb97b1f3035cd28c12b406288c463313c181/2c9b87377826d39b435cb677750d2d6137b98680d681897f49b7fc37d557f63d",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ]
+  },
+  {
+    "id": "143273986627732492",
+    "contact_id": "143273986042627076",
+    "contact": {
+      "id": "143273986042627076",
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "attention": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "email": "info@example.com",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "created_at": "2015-12-23T07:45:42.391Z",
+      "updated_at": "2015-12-23T07:45:42.391Z",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "estimate_id": null,
+    "workflow_id": "143273834790782070",
+    "document_style_id": "143273834854745210",
+    "identity_id": "143273834567435375",
+    "state": "draft",
+    "estimate_date": "2015-10-24",
+    "due_date": "2015-11-07",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "exchange_rate": "1.0",
+    "discount": "0.0",
+    "original_estimate_id": null,
+    "show_tax": true,
+    "sign_online": true,
+    "sent_at": null,
+    "accepted_at": null,
+    "rejected_at": null,
+    "archived_at": null,
+    "created_at": "2015-12-23T07:45:42.950Z",
+    "updated_at": "2015-12-23T07:45:42.950Z",
+    "pre_text": "Hello, here is your quote",
+    "post_text": "Please sign it",
+    "details": [
+      {
+        "id": "143273986631926797",
+        "tax_rate_id": "143273834510812265",
+        "ledger_account_id": "143273834460480615",
+        "amount": "1 x",
+        "description": "Project X",
+        "price": "300.0",
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2015-12-23T07:45:42.954Z",
+        "updated_at": "2015-12-23T07:45:42.954Z"
+      }
+    ],
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "url": "http://test.host/123/estimates/a283fb98efe38fc7a8671deb5a5171f8de110d5b963b041838d35663e71ba2d5/2c9b87377826d39b435cb677750d2d6137b98680d681897f49b7fc37d557f63d",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ]
+  }
+]

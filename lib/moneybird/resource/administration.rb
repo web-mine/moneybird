@@ -1,4 +1,4 @@
-module Moneybird
+module Moneybird::Resource
   class Administration
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
@@ -38,22 +38,6 @@ module Moneybird
 
     def workflows
       Moneybird::Workflow::Service.new(@client, id).all
-    end
-
-    class Service
-      attr_reader :client
-
-      def initialize(client)
-        @client = client
-      end
-
-      def all
-        result = client.get('/administrations')
-
-        JSON.parse(result.body).map do |administration|
-          Administration.new(client, administration)
-        end
-      end
     end
   end
 end

@@ -1,4 +1,4 @@
-module Moneybird
+module Moneybird::Resource
   class Webhook
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
@@ -11,15 +11,15 @@ module Moneybird
     )
 
     class Service
-      attr_reader :client, :administation_id
+      attr_reader :client, :administration_id
 
-      def initialize(client, administation_id)
+      def initialize(client, administration_id)
         @client = client
-        @administation_id = administation_id
+        @administration_id = administration_id
       end
 
       def all
-        result = client.get("#{administation_id}/webhooks")
+        result = client.get("#{administration_id}/webhooks")
 
         JSON.parse(result.body).map do |invoice|
           Webhook.new(self, invoice)

@@ -1,4 +1,4 @@
-module Moneybird
+module Moneybird::Resource
   class Contact
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
@@ -41,23 +41,6 @@ module Moneybird
       notes
       custom_fields
     )
-
-    class Service
-      attr_reader :client, :administation_id
-
-      def initialize(client, administation_id)
-        @client = client
-        @administation_id = administation_id
-      end
-
-      def all
-        result = client.get("#{administation_id}/contacts")
-
-        JSON.parse(result.body).map do |invoice|
-          Contact.new(self, invoice)
-        end
-      end
-    end
   end
 end
 

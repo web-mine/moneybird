@@ -1,0 +1,103 @@
+[
+  {
+    "id": "143274187727832071",
+    "contact_id": "143274187637654532",
+    "contact": {
+      "id": "143274187637654532",
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "attention": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "email": "info@example.com",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "created_at": "2015-12-23T07:48:54.644Z",
+      "updated_at": "2015-12-23T07:48:54.644Z",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "invoice_id": "2015-0001",
+    "workflow_id": "143273834676487280",
+    "document_style_id": "143273834854745210",
+    "identity_id": "143273834567435375",
+    "state": "open",
+    "invoice_date": "2015-12-23",
+    "due_date": "2016-01-06",
+    "payment_conditions": "We verzoeken u vriendelijk het bovenstaande bedrag van {document.total_price} voor {document.due_date} te voldoen op onze bankrekening onder vermelding van het factuurnummer {document.invoice_id}. Voor vragen kunt u contact opnemen per e-mail.",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "discount": "0.0",
+    "original_sales_invoice_id": null,
+    "paid_at": null,
+    "sent_at": "2015-12-23",
+    "created_at": "2015-12-23T07:48:54.730Z",
+    "updated_at": "2015-12-23T07:48:54.924Z",
+    "details": [
+      {
+        "id": "143274187733074952",
+        "tax_rate_id": "143273834510812265",
+        "ledger_account_id": "143273834460480615",
+        "amount": "1 x",
+        "description": "Project X",
+        "price": "300.0",
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2015-12-23T07:48:54.734Z",
+        "updated_at": "2015-12-23T07:48:54.913Z"
+      }
+    ],
+    "payments": [
+
+    ],
+    "total_paid": "0.0",
+    "total_unpaid": "363.0",
+    "prices_are_incl_tax": false,
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "url": "http://test.host/123/sales_invoices/1d1cbd01ad8672e0005d74e72d8e4bf76465e3d84ac6050b1c780e97c7a4241b/6094c72a2844607b3615d4feed91795efa59181ffd3ee90802e3507c496276b5",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ]
+  }
+]

@@ -1,5 +1,5 @@
-module Moneybird
-  class Product
+module Moneybird::Resource
+  class FinancialMutation
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
 
@@ -14,22 +14,20 @@ module Moneybird
     )
 
     class Service
-      attr_reader :client, :administation_id
+      attr_reader :client, :administration_id
 
-      def initialize(client, administation_id)
+      def initialize(client, administration_id)
         @client = client
-        @administation_id = administation_id
+        @administration_id = administration_id
       end
 
       def all
-        result = client.get("#{administation_id}/products")
+        result = client.get("#{administration_id}/financial_mutations")
 
         JSON.parse(result.body).map do |invoice|
-          Product.new(self, invoice)
+          FinancialMutation.new(self, invoice)
         end
       end
     end
   end
 end
-
-

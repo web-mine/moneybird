@@ -1,4 +1,4 @@
-module Moneybird
+module Moneybird::Resource
   class Workflow
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods

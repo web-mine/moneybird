@@ -1,4 +1,4 @@
-module Moneybird
+module Moneybird::Resource
   class SalesInvoice
     include Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
@@ -40,15 +40,15 @@ module Moneybird
     )
 
     class Service
-      attr_reader :client, :administation_id
+      attr_reader :client, :administration_id
 
-      def initialize(client, administation_id)
+      def initialize(client, administration_id)
         @client = client
-        @administation_id = administation_id
+        @administration_id = administration_id
       end
 
       def all
-        result = client.get("#{administation_id}/sales_invoices")
+        result = client.get("#{administration_id}/sales_invoices")
 
         JSON.parse(result.body).map do |invoice|
           SalesInvoice.new(self, invoice)

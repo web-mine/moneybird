@@ -1,10 +1,11 @@
 module Moneybird
   class Client
-    attr_reader :bearer, :_last_response
+    attr_reader :bearer_token, :_last_response
     attr_accessor :errors
+    attr_writer :http
 
-    def initialize(bearer)
-      @bearer = bearer
+    def initialize(bearer_token)
+      @bearer_token = bearer_token
     end
 
     def base_url
@@ -28,7 +29,7 @@ module Moneybird
       {
         'Accept' => 'application/json',
         'Content-Type' => 'application/json',
-        'Authorization' => "Bearer #{bearer}"
+        'Authorization' => "Bearer #{bearer_token}"
       }
     end
 
