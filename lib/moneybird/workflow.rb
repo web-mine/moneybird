@@ -17,15 +17,15 @@ module Moneybird
     )
 
     class Service
-      attr_reader :client, :administation_id
+      attr_reader :client, :administration_id
 
-      def initialize(client, administation_id)
+      def initialize(client, administration_id)
         @client = client
-        @administation_id = administation_id
+        @administration_id = administration_id
       end
 
       def all
-        result = client.get("#{administation_id}/workflows")
+        result = client.get("#{administration_id}/workflows")
 
         JSON.parse(result.body).map do |invoice|
           Workflow.new(self, invoice)
