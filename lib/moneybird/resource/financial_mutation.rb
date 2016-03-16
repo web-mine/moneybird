@@ -5,10 +5,23 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
-      description
-      price
-      tax_rate_id
-      ledger_account_id
+      amount
+      code
+      date
+      message
+      contra_account_name
+      contra_account_number
+      state
+      amount_open
+      sepa_fields
+      batch_reference
+      financial_account_id
+      currency
+      original_amount
+      financial_statement_id
+      processed_at
+      payments
+      ledger_account_bookings
       created_at
       updated_at
     )

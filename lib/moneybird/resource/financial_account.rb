@@ -5,10 +5,12 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
-      description
-      price
-      tax_rate_id
-      ledger_account_id
+      type
+      name
+      identifier
+      currency
+      provider
+      active
       created_at
       updated_at
     )

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "143274045018735618",
+    "type": "CreditCardAccount",
+    "name": "Creditcard 841 939",
+    "identifier": "939",
+    "currency": "EUR",
+    "provider": null,
+    "active": true,
+    "created_at": "2015-12-23T07:46:38.633Z",
+    "updated_at": "2015-12-23T07:46:38.633Z"
+  }
+]
