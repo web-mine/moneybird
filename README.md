@@ -1,4 +1,4 @@
-# Moneybird
+# Moneybird [![Build Status](https://travis-ci.org/maartenvanvliet/moneybird.svg?branch=master)](https://travis-ci.org/maartenvanvliet/moneybird)
 
 Gem to talk to the Moneybird REST API. Right now you'll need to get a 'bearer' token for the client to work, oauth2 support may added later. This gem is still under construction and any methods may still change signature without notice until 1.0 is released.
 
