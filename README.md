@@ -2,6 +2,8 @@
 
 Gem to talk to the Moneybird REST API. Right now you'll need to get a 'bearer' token for the client to work, oauth2 support may added later. This gem is still under construction and any methods may still change signature without notice until 1.0 is released.
 
+The library is modelled after http://developer.moneybird.com/ Any inconsistencies or errors in the documentation may also be present in the library.
+
 Feel free to file Pull Requests
 
 ## Installation
@@ -23,14 +25,29 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-# Use bearer token to authenticate yourself (see http://developer.moneybird.com/authentication/)
-client = Moneybird::Client.new('fe3f7f9e239e7d925f9caf695028e60fd3e5c2085f7aebb983cea731dea6b44f')
+# Client uses bearer token (see: http://developer.moneybird.com/authentication/)
+Moneybird::Client.new('fe3f7f9e239e7d925f9caf695028e60fd3e5c2085f7aebb983cea731dea6b44f')
 
-# List of administrations you have access to
+# List administrations
 administrations = client.administrations
 
 administration = administrations.first
+
+# List invoices
 administration.sales_invoices.all
+
+# List contacts
+administration.contacts.all
+
+# Create contact
+administrations.contacts.create(company_name: 'ACME', firstname: 'Foo', lastname: 'Bar')
+
+# Update contact
+contact = administration.contacts.all.first
+contact.company_name = 'Something new'
+administrations.contacts.save(contact)
+
+# Works similarly with other resources
 
 ```
 
