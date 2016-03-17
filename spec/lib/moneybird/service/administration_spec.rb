@@ -18,5 +18,11 @@ describe Moneybird::Service::Administration do
       administrations.length.must_equal 1
       administrations.first.id.must_equal 123
     end
+
+    it "finds an administration" do
+      administration = service.find(123)
+
+      administration.id.must_equal 123
+    end
   end
 end
