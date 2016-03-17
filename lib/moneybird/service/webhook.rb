@@ -1,6 +1,7 @@
 module Moneybird::Service
   class Webhook
     include Moneybird::Traits::AdministrationService
+    include Moneybird::Traits::Service
     include Moneybird::Traits::FindAll
 
     def resource_class

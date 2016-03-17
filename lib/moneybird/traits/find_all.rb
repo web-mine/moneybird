@@ -5,7 +5,7 @@ module Moneybird
         result = client.get(path)
 
         JSON.parse(result.body).map do |resource|
-          resource_class.new(client, resource)
+          build(resource)
         end
       end
     end

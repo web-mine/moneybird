@@ -1,11 +1,18 @@
 module Moneybird
   module Resource
     attr_reader :attributes
-    attr_accessor :errors
+    attr_accessor :errors, :client
 
-    def initialize(client, attributes)
-      @client = client
+    def initialize(attributes)
       self.attributes = attributes
+    end
+
+    def persisted?
+      !!id
+    end
+
+    def path
+      raise("Not implemented")
     end
 
     def attributes=(attributes)
@@ -40,6 +47,10 @@ module Moneybird
 
     module ClassMethods
       attr_reader :attributes, :nillable_attributes
+
+      def build(attributes)
+        new(attributes)
+      end
 
       def has_attributes(attributes)
         attr_accessor(*@attributes = attributes)

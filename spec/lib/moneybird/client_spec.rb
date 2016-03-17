@@ -28,10 +28,10 @@ describe Moneybird::Client do
       client.http.requests.last.must_equal(["GET", "/api/v2/path", nil])
     end
 
-    it "can do a put request" do
-      client.put('/path', 'body')
+    it "can do a patch request" do
+      client.patch('/path', 'body')
 
-      client.http.requests.last.must_equal(["PUT", "/api/v2/path", "body"])
+      client.http.requests.last.must_equal(["PATCH", "/api/v2/path", "body"])
     end
 
     it "can do a delete request" do

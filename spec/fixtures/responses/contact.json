@@ -1,0 +1,42 @@
+{
+  "id": "143273870053344266",
+  "company_name": "Test B.V.",
+  "firstname": "Foo",
+  "lastname": "Bar",
+  "attention": "",
+  "address1": "",
+  "address2": "",
+  "zipcode": "",
+  "city": "",
+  "country": "NL",
+  "email": "",
+  "phone": "",
+  "delivery_method": "Email",
+  "customer_id": "3",
+  "tax_number": "",
+  "chamber_of_commerce": "",
+  "bank_account": "",
+  "send_invoices_to_attention": "",
+  "send_invoices_to_email": "",
+  "send_estimates_to_attention": "",
+  "send_estimates_to_email": "",
+  "sepa_active": false,
+  "sepa_iban": "",
+  "sepa_iban_account_name": "",
+  "sepa_bic": "",
+  "sepa_mandate_id": "",
+  "sepa_mandate_date": null,
+  "sepa_sequence_type": "FRST",
+  "credit_card_number": "",
+  "credit_card_reference": "",
+  "credit_card_type": null,
+  "tax_number_validated_at": null,
+  "created_at": "2015-12-23T07:43:51.778Z",
+  "updated_at": "2015-12-23T07:43:51.778Z",
+  "notes": [
+
+  ],
+  "custom_fields": [
+
+  ]
+}

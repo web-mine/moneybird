@@ -43,9 +43,9 @@ module Moneybird
       perform(http)
     end
 
-    def put(path, body=nil, headers={})
+    def patch(path, body=nil, headers={})
       uri = uri_for_path(path)
-      http = Net::HTTP::Put.new(uri.request_uri, self.headers.merge(headers))
+      http = Net::HTTP::Patch.new(uri.request_uri, self.headers.merge(headers))
       http.body = body
       perform(http)
     end
@@ -64,7 +64,7 @@ module Moneybird
     end
 
     def administrations
-      Moneybird::Administration::Service.new(self).all
+      Moneybird::Service::Administration.new(self).all
     end
 
     private

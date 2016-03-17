@@ -9,6 +9,8 @@ end
 
 require "moneybird/traits/administration_service"
 require "moneybird/traits/find_all"
+require "moneybird/traits/service"
+require "moneybird/traits/save"
 
 require "moneybird/service/administration"
 require "moneybird/service/contact"

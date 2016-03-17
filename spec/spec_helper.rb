@@ -34,11 +34,16 @@ class FakeHttp
   end
 end
 
-FakeResponse = Struct.new(:status, :body)
+FakeResponse = Struct.new(:code, :body)
 
 def json_response(file)
   File.read("spec/fixtures/responses/#{file}.json")
 end
+
+def hash_response(file)
+  JSON.parse(File.read("spec/fixtures/responses/#{file}.json"))
+end
+
 
 def faked_client
   faked_client = Moneybird::Client.new("bearer token")

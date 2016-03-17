@@ -41,6 +41,11 @@ module Moneybird::Resource
       notes
       custom_fields
     )
+
+    def path
+      persisted? ? "/#{id}" : ""
+    end
+
   end
 end
 
