@@ -1,4 +1,4 @@
-# Moneybird
+# Moneybird [![Build Status](https://travis-ci.org/maartenvanvliet/moneybird.svg?branch=master)](https://travis-ci.org/maartenvanvliet/moneybird)
 
 Gem to talk to the Moneybird REST API. Right now you'll need to get a 'bearer' token for the client to work, oauth2 support may added later. This gem is still under construction and any methods may still change signature without notice until 1.0 is released.
 
@@ -39,6 +39,12 @@ administration.sales_invoices.all
 # List contacts
 administration.contacts.all
 
+# Find contact
+administration.contacts.find(moneybird_id)
+
+# Find contact by customer id
+administration.contacts.find_by_customer_id(customer_id)
+
 # Create contact
 administrations.contacts.create(company_name: 'ACME', firstname: 'Foo', lastname: 'Bar')
 
@@ -47,8 +53,19 @@ contact = administration.contacts.all.first
 contact.company_name = 'Something new'
 administrations.contacts.save(contact)
 
+# Delete contact
+administrations.contacts.delete(contact)
+
 # Works similarly with other resources
 
+```
+### Webhooks
+
+Moneybird, if so configured, sends webhooks to specified endpoints. This gem can deal with these requests.
+```ruby
+webhook = Moneybird::Webhook.from_json(request.body)
+sales_invoice = webhook.build_entity
+sales_invoice.state 
 ```
 
 ## Development
