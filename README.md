@@ -1,4 +1,4 @@
-# Moneybird [![Build Status](https://travis-ci.org/maartenvanvliet/moneybird.svg?branch=master)](https://travis-ci.org/maartenvanvliet/moneybird) [![Code Climate](https://codeclimate.com/github/maartenvanvliet/moneybird/badges/gpa.svg)](https://codeclimate.com/github/maartenvanvliet/moneybird)
+# Moneybird [![Build Status](https://travis-ci.org/maartenvanvliet/moneybird.svg?branch=master)](https://travis-ci.org/maartenvanvliet/moneybird) [![Code Climate](https://codeclimate.com/github/maartenvanvliet/moneybird/badges/gpa.svg)](https://codeclimate.com/github/maartenvanvliet/moneybird) [![Test Coverage](https://codeclimate.com/github/maartenvanvliet/moneybird/badges/coverage.svg)](https://codeclimate.com/github/maartenvanvliet/moneybird/coverage)
 
 Gem to talk to the Moneybird REST API. Right now you'll need to get a 'bearer' token for the client to work, oauth2 support may added later. This gem is still under construction and any methods may still change signature without notice until 1.0 is released.
 
