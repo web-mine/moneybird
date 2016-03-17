@@ -23,8 +23,14 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+# Use bearer token to authenticate yourself (see http://developer.moneybird.com/authentication/)
+client = Moneybird::Client.new('fe3f7f9e239e7d925f9caf695028e60fd3e5c2085f7aebb983cea731dea6b44f')
 
-Moneybird::Client.new('fe3f7f9e239e7d925f9caf695028e60fd3e5c2085f7aebb983cea731dea6b44f').administrations.first.sales_invoices.first
+# List of administrations you have access to
+administrations = client.administrations
+
+administration = administrations.first
+administration.sales_invoices.all
 
 ```
 
