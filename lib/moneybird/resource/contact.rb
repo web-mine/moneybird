@@ -16,6 +16,7 @@ module Moneybird::Resource
       country
       email
       phone
+      send_method
       delivery_method
       customer_id
       tax_number

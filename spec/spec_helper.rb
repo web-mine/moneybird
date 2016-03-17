@@ -40,6 +40,10 @@ def json_response(file)
   File.read("spec/fixtures/responses/#{file}.json")
 end
 
+def json_webhook(file)
+  File.read("spec/fixtures/webhooks/#{file}.json")
+end
+
 def hash_response(file)
   JSON.parse(File.read("spec/fixtures/responses/#{file}.json"))
 end
