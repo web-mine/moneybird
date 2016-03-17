@@ -41,6 +41,10 @@ module Moneybird::Resource
       attachments
     )
 
+    def notes=(notes)
+      @notes ||= notes.map{ |note| Moneybird::Resource::Generic::Note.build(note) }
+    end
+
     def contact=(attributes)
       @contact ||= Moneybird::Resource::Contact.build(attributes)
     end

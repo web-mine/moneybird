@@ -1,6 +1,7 @@
 module Moneybird::Resource
   class RecurringSalesInvoice
     include Moneybird::Resource
+
     extend Moneybird::Resource::ClassMethods
 
     has_attributes %i(
@@ -34,6 +35,10 @@ module Moneybird::Resource
       notes
       attachments
     )
+
+    def notes=(notes)
+      @notes ||= notes.map{ |note| Moneybird::Resource::Generic::Note.build(note) }
+    end
 
     def contact=(attributes)
       @contact ||= Moneybird::Resource::Contact.build(attributes)

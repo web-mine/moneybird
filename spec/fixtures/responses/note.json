@@ -1,0 +1,15 @@
+{
+  "id": "143274294094332940",
+  "entity_id": "143274293889860615",
+  "entity_type": "SalesInvoice",
+  "user_id": 1450856597312,
+  "assignee_id": 1450856597312,
+  "todo": true,
+  "note": "Text of the note",
+  "completed_at": null,
+  "completed_by_id": null,
+  "todo_type": null,
+  "data": null,
+  "created_at": "2015-12-23T07:50:36.167Z",
+  "updated_at": "2015-12-23T07:50:36.167Z"
+}

@@ -16,6 +16,7 @@ require "moneybird/traits/delete"
 require "moneybird/client"
 require "moneybird/resource"
 require "moneybird/resource/invoice/details"
+require "moneybird/resource/generic/note"
 require "moneybird/webhook"
 
 resources = %w(

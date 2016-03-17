@@ -42,6 +42,10 @@ module Moneybird::Resource
       notes
       custom_fields
     )
+
+    def notes=(notes)
+      @notes ||= notes.map{ |note| Moneybird::Resource::Generic::Note.build(note) }
+    end
   end
 end
 
