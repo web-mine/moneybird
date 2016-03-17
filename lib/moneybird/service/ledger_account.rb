@@ -4,6 +4,7 @@ module Moneybird::Service
     include Moneybird::Traits::Service
     include Moneybird::Traits::FindAll
     include Moneybird::Traits::Save
+    include Moneybird::Traits::Delete
 
     def resource_class
       Moneybird::Resource::LedgerAccount

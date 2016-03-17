@@ -3,6 +3,7 @@ module Moneybird::Service
     include Moneybird::Traits::AdministrationService
     include Moneybird::Traits::Service
     include Moneybird::Traits::FindAll
+    include Moneybird::Traits::Delete
 
     def resource_class
       Moneybird::Resource::Webhook

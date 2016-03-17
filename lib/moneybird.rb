@@ -11,6 +11,7 @@ require "moneybird/traits/administration_service"
 require "moneybird/traits/find_all"
 require "moneybird/traits/service"
 require "moneybird/traits/save"
+require "moneybird/traits/delete"
 require "moneybird/client"
 require "moneybird/resource"
 
