@@ -95,4 +95,15 @@ describe Moneybird::Service::Contact do
       resource.id.must_equal id
     end
   end
+
+  describe "#find_by_customer_id" do
+    let(:customer_id) { hash_response(resource)['customer_id']}
+
+    it "creates when not persisted" do
+      client.http.register_request(:GET, "/api/v2/123/contacts/customer_id/#{customer_id}", FakeResponse.new(200, json_response(resource)))
+
+      resource = service.find_by_customer_id(customer_id)
+      resource.customer_id.must_equal customer_id
+    end
+  end
 end

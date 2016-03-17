@@ -14,5 +14,11 @@ module Moneybird::Service
     def path
       "#{administration_id}/contacts"
     end
+
+    def find_by_customer_id(customer_id)
+      result = client.get("#{path}/customer_id/#{customer_id}")
+
+      build(JSON.parse(result.body))
+    end
   end
 end

@@ -38,6 +38,14 @@ module Moneybird::Resource
       url
       workflow_id
     )
+
+    def contact=(attributes)
+      @contact ||= Moneybird::Resource::Contact.build(attributes)
+    end
+
+    def details=(line_items)
+      @details ||= line_items.map{ |line_item| Moneybird::Resource::Invoice::Details.build(line_item) }
+    end
   end
 end
 
