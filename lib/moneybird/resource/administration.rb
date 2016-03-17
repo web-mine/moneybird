@@ -13,31 +13,47 @@ module Moneybird::Resource
     )
 
     def sales_invoices
-      Moneybird::SalesInvoice::Service.new(@client, id).all
+      Moneybird::Service::SalesInvoice.new(@client, id).all
     end
 
     def recurring_sales_invoices
-      Moneybird::RecurringSalesInvoice::Service.new(@client, id).all
+      Moneybird::Service::RecurringSalesInvoice.new(@client, id).all
     end
 
     def contacts
-      Moneybird::Contact::Service.new(@client, id).all
+      Moneybird::Service::Contact.new(@client, id).all
     end
 
     def estimates
-      Moneybird::Estimate::Service.new(@client, id).all
+      Moneybird::Service::Estimate.new(@client, id).all
     end
 
     def products
-      Moneybird::Product::Service.new(@client, id).all
+      Moneybird::Service::Product.new(@client, id).all
     end
 
     def webhooks
-      Moneybird::Webhook::Service.new(@client, id).all
+      Moneybird::Service::Webhook.new(@client, id).all
+    end
+
+    def identities
+      Moneybird::Service::Identity.new(@client, id).all
     end
 
     def workflows
-      Moneybird::Workflow::Service.new(@client, id).all
+      Moneybird::Service::Workflow.new(@client, id).all
+    end
+
+    def tax_rates
+      Moneybird::Service::TaxRate.new(@client, id).all
+    end
+
+    def financial_accounts
+      Moneybird::Service::FinancialAccount.new(@client, id).all
+    end
+
+    def financial_mutations
+      Moneybird::Service::FinancialMutation.new(@client, id).all
     end
   end
 end
