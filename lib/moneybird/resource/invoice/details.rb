@@ -17,9 +17,5 @@ module Moneybird::Resource::Invoice
       created_at
       updated_at
     )
-
-    def contact=(attributes)
-      @contact = Moneybird::Resource::Contact.build(attributes)
-    end
   end
 end
