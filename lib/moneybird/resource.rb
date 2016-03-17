@@ -12,7 +12,7 @@ module Moneybird
     end
 
     def path
-      raise("Not implemented")
+      persisted? ? "/#{id}" : ""
     end
 
     def attributes=(attributes)
