@@ -2,6 +2,7 @@ module Moneybird::Service
   class Contact
     include Moneybird::Traits::AdministrationService
     include Moneybird::Traits::Service
+    include Moneybird::Traits::Find
     include Moneybird::Traits::FindAll
     include Moneybird::Traits::Save
     include Moneybird::Traits::Delete

@@ -28,7 +28,6 @@ describe Moneybird::Service::Contact do
   end
 
   describe "#create" do
-
     before do
       client.http.register_request(:POST, '/api/v2/123/contacts', FakeResponse.new(201, json_response(resource)))
     end
@@ -83,6 +82,17 @@ describe Moneybird::Service::Contact do
 
       resource = service.build(attributes)
       service.delete(resource).must_equal true
+    end
+  end
+
+  describe "#find" do
+    let(:id) { hash_response(resource)['id']}
+
+    it "creates when not persisted" do
+      client.http.register_request(:GET, "/api/v2/123/contacts/#{id}", FakeResponse.new(200, json_response(resource)))
+
+      resource = service.find(id)
+      resource.id.must_equal id
     end
   end
 end
