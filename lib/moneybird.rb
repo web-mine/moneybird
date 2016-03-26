@@ -1,3 +1,4 @@
+require 'logger'
 require 'uri'
 require 'json'
 require 'net/http'

@@ -21,7 +21,7 @@ module Moneybird
         if respond_to?(writer = attribute.to_s + '=')
           send(writer, value)
         else
-          raise "#{self.class} does not have an `#{attribute}' attribute"
+          self.class.logger.warn "#{self.class} does not have an `#{attribute}' attribute"
         end
       end
     end
@@ -47,9 +47,16 @@ module Moneybird
 
     module ClassMethods
       attr_reader :attributes, :nillable_attributes
+      attr_writer :logger
 
       def build(attributes)
         new(attributes)
+      end
+
+      def logger
+        @logger ||= begin
+          logger = Logger.new(STDOUT)
+        end
       end
 
       def has_attributes(attributes)
