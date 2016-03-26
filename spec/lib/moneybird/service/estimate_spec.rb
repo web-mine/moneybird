@@ -13,8 +13,8 @@ describe Moneybird::Service::Estimate do
     it "returns list of estimates" do
       estimates = service.all
 
-      estimates.length.must_equal 2
-      estimates.first.id.must_equal "143273986166359047"
+      estimates.length.must_equal 1
+      estimates.first.id.must_equal "151540909722305543"
     end
   end
 end

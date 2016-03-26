@@ -34,6 +34,7 @@ module Moneybird::Resource
       details
       notes
       attachments
+      events
     )
 
     def notes=(notes)

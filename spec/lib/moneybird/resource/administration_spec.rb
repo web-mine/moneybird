@@ -27,7 +27,7 @@ describe Moneybird::Resource::Administration do
     client.http.register_request(:GET, '/api/v2/123/estimates', FakeResponse.new(200, json_response(:estimates)))
 
     estimates = administration.estimates.all
-    estimates.length.must_equal 2
+    estimates.length.must_equal 1
   end
 
   it "has a list of products" do

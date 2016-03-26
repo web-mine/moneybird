@@ -14,7 +14,7 @@ describe Moneybird::Service::SalesInvoice do
       sales_invoices = service.all
 
       sales_invoices.length.must_equal 1
-      sales_invoices.first.id.must_equal "143274187727832071"
+      sales_invoices.first.id.must_equal "151541225475802119"
     end
   end
 end

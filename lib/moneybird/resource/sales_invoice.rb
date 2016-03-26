@@ -37,6 +37,7 @@ module Moneybird::Resource
       updated_at
       url
       workflow_id
+      events
     )
 
     def notes=(notes)

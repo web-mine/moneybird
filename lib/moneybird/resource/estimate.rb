@@ -39,6 +39,7 @@ module Moneybird::Resource
       custom_fields
       notes
       attachments
+      events
     )
 
     def notes=(notes)
