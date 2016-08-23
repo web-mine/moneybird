@@ -48,6 +48,10 @@ module Moneybird::Resource
     def notes=(notes)
       @notes ||= notes.map{ |note| Moneybird::Resource::Generic::Note.build(note) }
     end
+
+    def events=(events)
+      @events ||= events.map{ |event| Moneybird::Resource::Generic::Event.build(event) }
+    end
   end
 end
 

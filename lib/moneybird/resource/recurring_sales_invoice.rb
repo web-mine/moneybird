@@ -49,6 +49,10 @@ module Moneybird::Resource
     def details=(line_items)
       @details ||= line_items.map{ |line_item| Moneybird::Resource::Invoice::Details.build(line_item) }
     end
+
+    def events=(events)
+      @events ||= events.map{ |event| Moneybird::Resource::Generic::Event.build(event) }
+    end
   end
 end
 

@@ -16,4 +16,8 @@ describe Moneybird::Resource::RecurringSalesInvoice do
   it "has notes" do
     recurring_sales_invoice.notes.first.must_be_instance_of Moneybird::Resource::Generic::Note
   end
+
+  it "has events" do
+    recurring_sales_invoice.events.first.must_be_instance_of Moneybird::Resource::Generic::Event
+  end
 end
