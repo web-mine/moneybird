@@ -43,6 +43,8 @@ module Moneybird::Resource
       notes
       custom_fields
       events
+      email_ubl
+      sales_invoices_url
     )
 
     def notes=(notes)

@@ -35,6 +35,9 @@
     "tax_number_validated_at": null,
     "created_at": "2016-03-23T13:42:11.993Z",
     "updated_at": "2016-03-23T13:42:11.993Z",
+    "email_ubl": true,
+    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/fb34468cc26829306558e3be084dd7cd3ef5dd04e31cd1e8b26fb17660e4aa97/all",
+
     "notes": [
 
     ],
@@ -90,6 +93,9 @@
     "tax_number_validated_at": null,
     "created_at": "2016-03-23T13:42:12.025Z",
     "updated_at": "2016-03-23T13:42:12.025Z",
+    "email_ubl": true,
+    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/fb34468cc26829306558e3be084dd7cd3ef5dd04e31cd1e8b26fb17660e4aa97/all",
+
     "notes": [
 
     ],
