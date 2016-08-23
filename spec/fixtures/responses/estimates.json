@@ -1,9 +1,11 @@
 [
   {
     "id": "151540909722305543",
+    "administration_id": 123,
     "contact_id": "151540909642613764",
     "contact": {
       "id": "151540909642613764",
+      "administration_id": 123,
       "company_name": "Foobar Holding B.V.",
       "firstname": "",
       "lastname": "",
@@ -70,6 +72,7 @@
     "details": [
       {
         "id": "151540909734888456",
+        "administration_id": 123,
         "tax_rate_id": "151540702391567455",
         "ledger_account_id": "151540702338090077",
         "amount": "1 x",

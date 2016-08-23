@@ -11,6 +11,7 @@ module Moneybird::Resource
       ledger_account_id
       created_at
       updated_at
+      administration_id
     )
   end
 end

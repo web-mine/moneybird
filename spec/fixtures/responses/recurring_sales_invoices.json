@@ -1,9 +1,11 @@
 [
   {
     "id": "151541186445706247",
+    "administration_id": 123,
     "contact_id": "151541186379645956",
     "contact": {
       "id": "151541186379645956",
+      "administration_id": 123,
       "company_name": "Foobar Holding B.V.",
       "firstname": "",
       "lastname": "",
@@ -70,6 +72,7 @@
     "details": [
       {
         "id": "151541186448851976",
+        "administration_id": 123,
         "tax_rate_id": "151540702391567455",
         "ledger_account_id": "151540702338090077",
         "amount": "5 stuks",
@@ -86,6 +89,7 @@
       },
       {
         "id": "151541186451997705",
+        "administration_id": 123,
         "tax_rate_id": "151540702391567455",
         "ledger_account_id": "151540702338090077",
         "amount": "2 stuks",
@@ -110,6 +114,7 @@
     "events": [
       {
         "user_id": 14587404967144,
+        "administration_id": 123,
         "action": "recurring_sales_invoice_created",
         "link_entity_id": null,
         "link_entity_type": null,

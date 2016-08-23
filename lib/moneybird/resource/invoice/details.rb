@@ -5,6 +5,7 @@ module Moneybird::Resource::Invoice
 
     has_attributes %i(
       tax_rate_id
+      administration_id
       ledger_account_id
       amount
       price

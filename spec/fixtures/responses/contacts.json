@@ -1,6 +1,7 @@
 [
   {
     "id": "151540738521302020",
+    "administration_id": 123,
     "company_name": "Foobar Holding B.V.",
     "firstname": "John",
     "lastname": "Appleseed",
@@ -43,6 +44,7 @@
     "events": [
       {
         "user_id": 14587404967144,
+        "administration_id": 123,
         "action": "contact_created",
         "link_entity_id": null,
         "link_entity_type": null,
@@ -54,6 +56,7 @@
   },
   {
     "id": "151540738555905031",
+    "administration_id": 123,
     "company_name": "Foobar Holding B.V.",
     "firstname": "John",
     "lastname": "Doe",
@@ -96,6 +99,7 @@
     "events": [
       {
         "user_id": 14587404967144,
+        "administration_id": 123,
         "action": "contact_created",
         "link_entity_id": null,
         "link_entity_type": null,

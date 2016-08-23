@@ -1,6 +1,7 @@
 [
   {
     "id": "143273834676487280",
+    "administration_id": 123,
     "type": "InvoiceWorkflow",
     "name": "Standaard",
     "default": true,
@@ -13,6 +14,7 @@
   },
   {
     "id": "143273834790782070",
+    "administration_id": 123,
     "type": "EstimateWorkflow",
     "name": "Standaard",
     "default": true,

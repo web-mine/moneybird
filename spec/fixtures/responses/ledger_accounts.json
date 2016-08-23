@@ -1,6 +1,7 @@
 [
   {
     "id": "143273834459432032",
+    "administration_id": 123,
     "name": "Crediteuren",
     "account_type": "current_liabilities",
     "account_id": null,
@@ -10,6 +11,7 @@
   },
   {
     "id": "143273834457334874",
+    "administration_id": 123,
     "name": "Debiteuren",
     "account_type": "current_assets",
     "account_id": null,
@@ -19,6 +21,7 @@
   },
   {
     "id": "143273834457334873",
+    "administration_id": 123,
     "name": "Financiële rekeningen",
     "account_type": "current_assets",
     "account_id": null,

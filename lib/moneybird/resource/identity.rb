@@ -5,6 +5,7 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
+      administration_id
       company_name
       city
       country

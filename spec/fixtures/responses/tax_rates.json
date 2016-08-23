@@ -1,6 +1,7 @@
 [
   {
     "id": "143273834510812265",
+    "administration_id": 123,
     "name": "21% btw",
     "percentage": "21.0",
     "tax_rate_type": "sales_invoice",
@@ -11,6 +12,7 @@
   },
   {
     "id": "143273834520249450",
+    "administration_id": 123,
     "name": "6% btw",
     "percentage": "6.0",
     "tax_rate_type": "sales_invoice",
@@ -21,6 +23,7 @@
   },
   {
     "id": "143273834526540907",
+    "administration_id": 123,
     "name": "0% btw",
     "percentage": "0.0",
     "tax_rate_type": "sales_invoice",

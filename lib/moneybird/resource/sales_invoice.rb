@@ -5,6 +5,7 @@ module Moneybird::Resource
 
     has_attributes %i(
       attachments
+      administration_id
       contact
       contact_id
       created_at

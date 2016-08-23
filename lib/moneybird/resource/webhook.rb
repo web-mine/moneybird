@@ -5,6 +5,7 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
+      administration_id
       url
       last_http_status
       last_http_body

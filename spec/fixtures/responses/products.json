@@ -1,6 +1,7 @@
 [
   {
     "id": "143274140103607298",
+    "administration_id": 123,
     "description": "My product description",
     "price": "100.0",
     "tax_rate_id": "143273834510812265",

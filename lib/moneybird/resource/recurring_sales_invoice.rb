@@ -6,6 +6,7 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
+      administration_id
       contact_id
       contact
       workflow_id

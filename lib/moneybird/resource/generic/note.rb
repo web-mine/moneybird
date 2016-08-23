@@ -5,6 +5,7 @@ module Moneybird::Resource::Generic
 
     has_attributes %i(
       id
+      administration_id
       entity_id
       entity_type
       user_id

@@ -1,6 +1,7 @@
 [
   {
     "id": "143273834854745210",
+    "administration_id": 123,
     "name": "Default",
     "identity_id": "143273834567435375",
     "default": true,

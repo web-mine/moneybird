@@ -5,6 +5,7 @@ module Moneybird::Resource
 
     has_attributes %i(
       id
+      administration_id
       name
       account_type
       account_id
