@@ -2,13 +2,12 @@
 
 require "bundler/setup"
 require "moneybird"
-
-# You can add fixtures and/or initialization code here to make experimenting
-# with your gem easier. You can also use a different console, if you like.
-
-# (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
-
 require "irb"
+
+if ENV['MONEYBIRD_API_TOKEN']
+  @client = Moneybird::Client.new(ENV['MONEYBIRD_API_TOKEN'])
+end
+
 IRB.start
+
+
