@@ -15,6 +15,10 @@ module Moneybird
       persisted? ? "/#{id}" : ""
     end
 
+    def name
+      self.class.name.split('::').last.downcase
+    end
+
     def attributes=(attributes)
       @attributes = attributes
       attributes.each do |attribute, value|
@@ -42,7 +46,7 @@ module Moneybird
     end
 
     def to_json
-      JSON.generate(attributes)
+      JSON.generate({name => attributes})
     end
 
     module ClassMethods
