@@ -78,7 +78,7 @@ describe Moneybird::Service::Contact do
     let(:attributes) { {id: id, company_name: 'ACME', firstname: 'Foo', lastname: 'Bar'} }
 
     it "creates when not persisted" do
-      client.http.register_request(:DELETE, '/api/v2/123/contacts/1', FakeResponse.new(200, json_response(resource)))
+      client.http.register_request(:DELETE, '/api/v2/123/contacts/1', FakeResponse.new(204, json_response(resource)))
 
       resource = service.build(attributes)
       service.delete(resource).must_equal true
