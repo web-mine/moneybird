@@ -88,11 +88,18 @@ describe Moneybird::Service::Contact do
   describe "#find" do
     let(:id) { hash_response(resource)['id']}
 
-    it "creates when not persisted" do
+    it "finds an existing record" do
       client.http.register_request(:GET, "/api/v2/123/contacts/#{id}", FakeResponse.new(200, json_response(resource)))
 
       resource = service.find(id)
       resource.id.must_equal id
+    end
+
+    it "returns nil if record does not exist" do
+      client.http.register_request(:GET, "/api/v2/123/contacts/#{id}", FakeResponse.new(404, json_response(:error)))
+
+      resource = service.find(id)
+      resource.must_equal nil
     end
   end
 
@@ -104,6 +111,13 @@ describe Moneybird::Service::Contact do
 
       resource = service.find_by_customer_id(customer_id)
       resource.customer_id.must_equal customer_id
+    end
+
+    it "returns nil if record does not exist" do
+      client.http.register_request(:GET, "/api/v2/123/contacts/customer_id/#{customer_id}", FakeResponse.new(404, json_response(:error)))
+
+      resource = service.find_by_customer_id(customer_id)
+      resource.must_equal nil
     end
   end
 end

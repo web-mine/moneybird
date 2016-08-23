@@ -18,10 +18,8 @@ module Moneybird::Service
     def find_by_customer_id(customer_id)
       result = client.get("#{path}/customer_id/#{customer_id}")
 
-      if result.code.to_i == 200
+      if result.code.to_i == GET_SUCCESS_CODE
         build(JSON.parse(result.body))
-      else
-        JSON.parse(result.body)
       end
     end
   end
