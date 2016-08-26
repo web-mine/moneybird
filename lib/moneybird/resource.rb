@@ -15,10 +15,6 @@ module Moneybird
       persisted? ? "/#{id}" : ""
     end
 
-    def name
-      self.class.name.split('::').last.downcase
-    end
-
     def attributes=(attributes)
       @attributes = attributes
       attributes.each do |attribute, value|
@@ -46,7 +42,7 @@ module Moneybird
     end
 
     def to_json
-      JSON.generate({name => attributes})
+      JSON.generate({self.class.resource => attributes})
     end
 
     module ClassMethods
@@ -61,6 +57,10 @@ module Moneybird
         @logger ||= begin
           logger = Logger.new(STDOUT)
         end
+      end
+
+      def resource
+        self.name.split('::').last.downcase
       end
 
       def has_attributes(attributes)
