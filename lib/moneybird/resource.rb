@@ -42,7 +42,7 @@ module Moneybird
     end
 
     def to_json
-      JSON.generate({self.class.resource => attributes})
+      JSON.generate({self.class.resource => attributes.as_json}})
     end
 
     module ClassMethods
