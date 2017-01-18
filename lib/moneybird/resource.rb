@@ -60,7 +60,7 @@ module Moneybird
       end
 
       def resource
-        self.name.split('::').last.downcase
+        self.name.split('::').last.underscore
       end
 
       def has_attributes(attributes)
