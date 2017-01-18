@@ -43,7 +43,7 @@ module Moneybird::Resource
     end
 
     def contact=(attributes)
-      @contact ||= Moneybird::Resource::Contact.build(attributes)
+      @contact = Moneybird::Resource::Contact.build(attributes)
     end
 
     def details=(line_items)
