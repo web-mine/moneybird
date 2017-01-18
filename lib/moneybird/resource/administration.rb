@@ -12,6 +12,10 @@ module Moneybird::Resource
       time_zone
     )
 
+    def ledger_accounts
+      Moneybird::Service::LedgerAccount.new(@client, id)
+    end
+
     def sales_invoices
       Moneybird::Service::SalesInvoice.new(@client, id)
     end
