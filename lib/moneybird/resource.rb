@@ -30,7 +30,9 @@ module Moneybird
       self.class.attributes.inject({}) do |attributes, attribute|
         value = send(attribute)
         if !value.nil?
-          if value.respond_to?(:attributes)
+          if value.is_a?(Array) && value.first.respond_to?(:attributes)
+            attributes["#{attribute}_attributes"] = value.map { |item| item.attributes }
+          elsif value.respond_to?(:attributes)
             attributes["#{attribute}_attributes"] = value.attributes
           else
             unless self.class.nillable_attributes && self.class.nillable_attributes.include?(attribute)
@@ -42,7 +44,7 @@ module Moneybird
     end
 
     def to_json
-      JSON.generate({self.class.resource => attributes})
+      JSON.generate({self.class.resource => attributes.as_json})
     end
 
     module ClassMethods
@@ -60,7 +62,7 @@ module Moneybird
       end
 
       def resource
-        self.name.split('::').last.downcase
+        self.name.split('::').last.underscore
       end
 
       def has_attributes(attributes)
