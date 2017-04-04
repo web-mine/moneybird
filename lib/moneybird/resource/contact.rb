@@ -45,6 +45,8 @@ module Moneybird::Resource
       events
       email_ubl
       sales_invoices_url
+      invoice_workflow_id
+      estimate_workflow_id
     )
 
     def notes=(notes)
