@@ -11,7 +11,11 @@ require 'moneybird'
 
 class FakeHttp
   attr_reader :requests, :registered_requests
-  attr_writer :_next_response
+  attr_accessor :_next_response
+
+  def initialize
+    @_next_response = nil
+  end
 
   def request(net_http_request)
     @requests ||= []
