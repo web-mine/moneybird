@@ -4,18 +4,21 @@ module Moneybird::Resource::Invoice
     extend Moneybird::Resource::ClassMethods
 
     has_attributes %i(
-      tax_rate_id
       administration_id
-      ledger_account_id
       amount
-      price
+      amount_decimal
+      created_at
       description
+      id
+      ledger_account_id
+      period
+      price
+      product_id
       row_order
+      tax_rate_id
+      tax_report_reference
       total_price_excl_tax_with_discount
       total_price_excl_tax_with_discount_base
-      tax_report_reference
-      id
-      created_at
       updated_at
     )
   end
