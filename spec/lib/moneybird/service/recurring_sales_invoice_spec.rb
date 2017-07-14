@@ -13,8 +13,8 @@ describe Moneybird::Service::RecurringSalesInvoice do
     it "returns list of recurring_sales_invoices" do
       recurring_sales_invoices = service.all
 
-      recurring_sales_invoices.length.must_equal 1
-      recurring_sales_invoices.first.id.must_equal "151541186445706247"
+      recurring_sales_invoices.length.must_equal 3
+      recurring_sales_invoices.first.id.must_equal "194733557789230097"
     end
   end
 end

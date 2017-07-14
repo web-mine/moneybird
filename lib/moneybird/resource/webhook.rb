@@ -9,6 +9,7 @@ module Moneybird::Resource
       url
       last_http_status
       last_http_body
+      events
     )
   end
 end

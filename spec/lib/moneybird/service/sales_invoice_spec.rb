@@ -13,8 +13,8 @@ describe Moneybird::Service::SalesInvoice do
     it "returns list of sales_invoices" do
       sales_invoices = service.all
 
-      sales_invoices.length.must_equal 1
-      sales_invoices.first.id.must_equal "151541225475802119"
+      sales_invoices.length.must_equal 3
+      sales_invoices.first.id.must_equal "194733567493801235"
     end
   end
 end

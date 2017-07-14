@@ -1,10 +1,10 @@
-[
+ [
   {
-    "id": "151540909722305543",
+    "id": "194733527152985421",
     "administration_id": 123,
-    "contact_id": "151540909642613764",
+    "contact_id": "194733526313076029",
     "contact": {
-      "id": "151540909642613764",
+      "id": "194733526313076029",
       "administration_id": 123,
       "company_name": "Foobar Holding B.V.",
       "firstname": "",
@@ -22,6 +22,7 @@
       "bank_account": "",
       "attention": "",
       "email": "info@example.com",
+      "email_ubl": true,
       "send_invoices_to_attention": "",
       "send_invoices_to_email": "info@example.com",
       "send_estimates_to_attention": "",
@@ -37,8 +38,12 @@
       "credit_card_reference": "",
       "credit_card_type": null,
       "tax_number_validated_at": null,
-      "created_at": "2016-03-23T13:44:55.188Z",
-      "updated_at": "2016-03-23T13:44:55.188Z",
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:04.307Z",
+      "updated_at": "2017-07-13T07:53:04.307Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164/all",
       "notes": [
 
       ],
@@ -46,13 +51,14 @@
 
       ]
     },
-    "estimate_id": "2016-0001",
-    "workflow_id": "151540702984012908",
-    "document_style_id": "151540703065801840",
-    "identity_id": "151540702457627749",
+    "estimate_id": "2017-0004",
+    "workflow_id": "194733447584941652",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
     "state": "open",
-    "estimate_date": "2016-03-23",
-    "due_date": "2016-04-06",
+    "estimate_date": "2017-07-13",
+    "due_date": "2017-07-27",
     "reference": "Project X",
     "language": "nl",
     "currency": "EUR",
@@ -61,38 +67,42 @@
     "original_estimate_id": null,
     "show_tax": true,
     "sign_online": true,
-    "sent_at": "2016-03-23",
+    "sent_at": "2017-07-13",
     "accepted_at": null,
     "rejected_at": null,
     "archived_at": null,
-    "created_at": "2016-03-23T13:44:55.263Z",
-    "updated_at": "2016-03-23T13:44:56.022Z",
+    "created_at": "2017-07-13T07:53:05.109Z",
+    "updated_at": "2017-07-13T07:53:05.249Z",
     "pre_text": "Hello, here is your quote",
     "post_text": "Please sign it",
     "details": [
       {
-        "id": "151540909734888456",
+        "id": "194733527156131150",
         "administration_id": 123,
-        "tax_rate_id": "151540702391567455",
-        "ledger_account_id": "151540702338090077",
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
         "amount": "1 x",
+        "amount_decimal": "1.0",
         "description": "Project X",
         "price": "300.0",
+        "period": null,
         "row_order": 1,
         "total_price_excl_tax_with_discount": "300.0",
         "total_price_excl_tax_with_discount_base": "300.0",
         "tax_report_reference": [
           "NL/1a"
         ],
-        "created_at": "2016-03-23T13:44:55.275Z",
-        "updated_at": "2016-03-23T13:44:55.455Z"
+        "created_at": "2017-07-13T07:53:05.112Z",
+        "updated_at": "2017-07-13T07:53:05.246Z"
       }
     ],
     "total_price_excl_tax": "300.0",
     "total_price_excl_tax_base": "300.0",
     "total_price_incl_tax": "363.0",
     "total_price_incl_tax_base": "363.0",
-    "url": "http://test.host/123/estimates/867842a143fee8f24f1461420af9489276157ca4b4ca6d4b7f1e3aeb8650ae18/8e34ca1b7e0139d4c4cb1a788f54fb77438069dfa8ae44fccbb3d480ad9d1d4f",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/estimates/7ce3a012989f1eb22c0bb98b65ba73c5637c601d3d00818f0599f84a942f27dc/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164",
     "custom_fields": [
 
     ],
@@ -104,25 +114,332 @@
     ],
     "events": [
       {
-        "user_id": 14587404967144,
+        "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "estimate_created",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": null,
-        "created_at": "2016-03-23T13:44:55.289Z",
-        "updated_at": "2016-03-23T13:44:55.289Z"
+        "created_at": "2017-07-13T07:53:05.121Z",
+        "updated_at": "2017-07-13T07:53:05.121Z"
       },
       {
-        "user_id": 14587404967144,
+        "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "estimate_send_email",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": {
           "email_address": "info@example.com",
-          "email_message": "Geachte Foobar Holding B.V.,\n\nHierbij ontvangt u van ons een prijsopgave 2016-0001 voor onze\ndiensten.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+          "email_message": "Geachte Foobar Holding B.V.,\n\nHierbij ontvangt u van ons een prijsopgave 2017-0004 voor onze\ndiensten.\n\nMet vriendelijke groet,\n\nParkietje B.V."
         },
-        "created_at": "2016-03-23T13:44:56.060Z",
-        "updated_at": "2016-03-23T13:44:56.060Z"
+        "created_at": "2017-07-13T07:53:05.264Z",
+        "updated_at": "2017-07-13T07:53:05.264Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
+      }
+    ]
+  },
+  {
+    "id": "194733526905521481",
+    "administration_id": 123,
+    "contact_id": "194733526313076029",
+    "contact": {
+      "id": "194733526313076029",
+      "administration_id": 123,
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "attention": "",
+      "email": "info@example.com",
+      "email_ubl": true,
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:04.307Z",
+      "updated_at": "2017-07-13T07:53:04.307Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164/all",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "estimate_id": "2017-0003",
+    "workflow_id": "194733447584941652",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
+    "state": "open",
+    "estimate_date": "2017-07-13",
+    "due_date": "2017-07-27",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "exchange_rate": "1.0",
+    "discount": "0.0",
+    "original_estimate_id": null,
+    "show_tax": true,
+    "sign_online": true,
+    "sent_at": "2017-07-13",
+    "accepted_at": null,
+    "rejected_at": null,
+    "archived_at": null,
+    "created_at": "2017-07-13T07:53:04.872Z",
+    "updated_at": "2017-07-13T07:53:05.014Z",
+    "pre_text": "Hello, here is your quote",
+    "post_text": "Please sign it",
+    "details": [
+      {
+        "id": "194733526907618634",
+        "administration_id": 123,
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
+        "amount": "1 x",
+        "amount_decimal": "1.0",
+        "description": "Project X",
+        "price": "300.0",
+        "period": null,
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2017-07-13T07:53:04.875Z",
+        "updated_at": "2017-07-13T07:53:05.011Z"
+      }
+    ],
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/estimates/98442a11d9be3aad8332e29b3c5511e1e1ad92a308bf6f790231fa7fe779b952/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ],
+    "events": [
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "estimate_created",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": null,
+        "created_at": "2017-07-13T07:53:04.885Z",
+        "updated_at": "2017-07-13T07:53:04.885Z"
+      },
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "estimate_send_email",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": {
+          "email_address": "info@example.com",
+          "email_message": "Geachte Foobar Holding B.V.,\n\nHierbij ontvangt u van ons een prijsopgave 2017-0003 voor onze\ndiensten.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+        },
+        "created_at": "2017-07-13T07:53:05.030Z",
+        "updated_at": "2017-07-13T07:53:05.030Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
+      }
+    ]
+  },
+  {
+    "id": "194733526658057541",
+    "administration_id": 123,
+    "contact_id": "194733526313076029",
+    "contact": {
+      "id": "194733526313076029",
+      "administration_id": 123,
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "attention": "",
+      "email": "info@example.com",
+      "email_ubl": true,
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:04.307Z",
+      "updated_at": "2017-07-13T07:53:04.307Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164/all",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "estimate_id": "2017-0002",
+    "workflow_id": "194733447584941652",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
+    "state": "open",
+    "estimate_date": "2017-07-13",
+    "due_date": "2017-07-27",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "exchange_rate": "1.0",
+    "discount": "0.0",
+    "original_estimate_id": null,
+    "show_tax": true,
+    "sign_online": true,
+    "sent_at": "2017-07-13",
+    "accepted_at": null,
+    "rejected_at": null,
+    "archived_at": null,
+    "created_at": "2017-07-13T07:53:04.637Z",
+    "updated_at": "2017-07-13T07:53:04.777Z",
+    "pre_text": "Hello, here is your quote",
+    "post_text": "Please sign it",
+    "details": [
+      {
+        "id": "194733526661203270",
+        "administration_id": 123,
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
+        "amount": "1 x",
+        "amount_decimal": "1.0",
+        "description": "Project X",
+        "price": "300.0",
+        "period": null,
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2017-07-13T07:53:04.640Z",
+        "updated_at": "2017-07-13T07:53:04.774Z"
+      }
+    ],
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/estimates/5b997122ca53a9940409c55ebf76428729c701f2b865c441295ddf11c737b519/b052622b892586c00c795fbce12b5df3ffffa360408b8325ebc6cab898550164",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ],
+    "events": [
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "estimate_created",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": null,
+        "created_at": "2017-07-13T07:53:04.649Z",
+        "updated_at": "2017-07-13T07:53:04.649Z"
+      },
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "estimate_send_email",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": {
+          "email_address": "info@example.com",
+          "email_message": "Geachte Foobar Holding B.V.,\n\nHierbij ontvangt u van ons een prijsopgave 2017-0002 voor onze\ndiensten.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+        },
+        "created_at": "2017-07-13T07:53:04.793Z",
+        "updated_at": "2017-07-13T07:53:04.793Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
       }
     ]
   }

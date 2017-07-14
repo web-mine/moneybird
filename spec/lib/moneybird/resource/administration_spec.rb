@@ -13,7 +13,7 @@ describe Moneybird::Resource::Administration do
     client.http.register_request(:GET, '/api/v2/123/sales_invoices', FakeResponse.new(200, json_response(:sales_invoices)))
 
     sales_invoices = administration.sales_invoices.all
-    sales_invoices.length.must_equal 1
+    sales_invoices.length.must_equal 3
   end
 
   it "has a list of contacts" do
@@ -27,7 +27,7 @@ describe Moneybird::Resource::Administration do
     client.http.register_request(:GET, '/api/v2/123/estimates', FakeResponse.new(200, json_response(:estimates)))
 
     estimates = administration.estimates.all
-    estimates.length.must_equal 1
+    estimates.length.must_equal 3
   end
 
   it "has a list of products" do
@@ -62,7 +62,7 @@ describe Moneybird::Resource::Administration do
     client.http.register_request(:GET, '/api/v2/123/recurring_sales_invoices', FakeResponse.new(200, json_response(:recurring_sales_invoices)))
 
     recurring_sales_invoices = administration.recurring_sales_invoices.all
-    recurring_sales_invoices.length.must_equal 1
+    recurring_sales_invoices.length.must_equal 3
   end
 
   it "has a list of identities" do

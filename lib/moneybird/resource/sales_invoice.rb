@@ -14,6 +14,7 @@ module Moneybird::Resource
       details
       discount
       document_style_id
+      draft_id
       due_date
       id
       identity_id
@@ -26,15 +27,19 @@ module Moneybird::Resource
       payment_conditions
       payments
       prices_are_incl_tax
+      recurring_sales_invoice_id
       reference
       sent_at
       state
+      tax_totals
+      total_discount
       total_paid
       total_price_excl_tax
       total_price_excl_tax_base
       total_price_incl_tax
       total_price_incl_tax_base
       total_unpaid
+      total_unpaid_base
       updated_at
       url
       workflow_id

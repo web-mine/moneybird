@@ -9,6 +9,7 @@ module Moneybird::Resource
       contact_id
       contact
       details
+      draft_id
       estimate_id
       workflow_id
       document_style_id
@@ -30,6 +31,8 @@ module Moneybird::Resource
       archived_at
       created_at
       updated_at
+      tax_totals
+      total_discount
       pre_text
       post_text
       total_price_excl_tax

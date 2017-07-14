@@ -1,10 +1,10 @@
-[
+  [
   {
-    "id": "151541225475802119",
+    "id": "194733567493801235",
     "administration_id": 123,
-    "contact_id": "151541225398207492",
+    "contact_id": "194733566469342471",
     "contact": {
-      "id": "151541225398207492",
+      "id": "194733566469342471",
       "administration_id": 123,
       "company_name": "Foobar Holding B.V.",
       "firstname": "",
@@ -22,6 +22,7 @@
       "bank_account": "",
       "attention": "",
       "email": "info@example.com",
+      "email_ubl": true,
       "send_invoices_to_attention": "",
       "send_invoices_to_email": "info@example.com",
       "send_estimates_to_attention": "",
@@ -37,8 +38,12 @@
       "credit_card_reference": "",
       "credit_card_type": null,
       "tax_number_validated_at": null,
-      "created_at": "2016-03-23T13:49:56.317Z",
-      "updated_at": "2016-03-23T13:49:56.317Z",
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:42.603Z",
+      "updated_at": "2017-07-13T07:53:42.603Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132/all",
       "notes": [
 
       ],
@@ -46,13 +51,15 @@
 
       ]
     },
-    "invoice_id": "2016-0001",
-    "workflow_id": "151540702793172070",
-    "document_style_id": "151540703065801840",
-    "identity_id": "151540702457627749",
+    "invoice_id": "2017-0003",
+    "recurring_sales_invoice_id": null,
+    "workflow_id": "194733447301826126",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
     "state": "open",
-    "invoice_date": "2016-03-23",
-    "due_date": "2016-04-06",
+    "invoice_date": "2017-07-13",
+    "due_date": "2017-07-27",
     "payment_conditions": "We verzoeken u vriendelijk het bovenstaande bedrag van {document.total_price} voor {document.due_date} te voldoen op onze bankrekening onder vermelding van het factuurnummer {document.invoice_id}. Voor vragen kunt u contact opnemen per e-mail.",
     "reference": "Project X",
     "language": "nl",
@@ -60,26 +67,29 @@
     "discount": "0.0",
     "original_sales_invoice_id": null,
     "paid_at": null,
-    "sent_at": "2016-03-23",
-    "created_at": "2016-03-23T13:49:56.391Z",
-    "updated_at": "2016-03-23T13:49:56.578Z",
+    "sent_at": "2017-07-13",
+    "created_at": "2017-07-13T07:53:43.577Z",
+    "updated_at": "2017-07-13T07:53:43.876Z",
     "details": [
       {
-        "id": "151541225479996424",
+        "id": "194733567499044116",
         "administration_id": 123,
-        "tax_rate_id": "151540702391567455",
-        "ledger_account_id": "151540702338090077",
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
         "amount": "1 x",
+        "amount_decimal": "1.0",
         "description": "Project X",
         "price": "300.0",
+        "period": null,
         "row_order": 1,
         "total_price_excl_tax_with_discount": "300.0",
         "total_price_excl_tax_with_discount_base": "300.0",
         "tax_report_reference": [
           "NL/1a"
         ],
-        "created_at": "2016-03-23T13:49:56.396Z",
-        "updated_at": "2016-03-23T13:49:56.584Z"
+        "created_at": "2017-07-13T07:53:43.584Z",
+        "updated_at": "2017-07-13T07:53:43.874Z"
       }
     ],
     "payments": [
@@ -87,12 +97,14 @@
     ],
     "total_paid": "0.0",
     "total_unpaid": "363.0",
+    "total_unpaid_base": "363.0",
     "prices_are_incl_tax": false,
     "total_price_excl_tax": "300.0",
     "total_price_excl_tax_base": "300.0",
     "total_price_incl_tax": "363.0",
     "total_price_incl_tax_base": "363.0",
-    "url": "http://test.host/123/sales_invoices/144f2bd05aaa768980cd5ffe31784f6d6ed944df717ab74f8c2a18d29c1aa54a/9dfcfcf9a3615b633b6f0ce23c1eddd0b7c220337d6930330e6d1b6fd140a809",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/sales_invoices/19625755314e0e441429848b52afb0edb2138e51da11fa6bcc8aee69fe7c1a0f/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132",
     "custom_fields": [
 
     ],
@@ -104,27 +116,336 @@
     ],
     "events": [
       {
-        "user_id": 14587404967144,
         "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "sales_invoice_created",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": null,
-        "created_at": "2016-03-23T13:49:56.407Z",
-        "updated_at": "2016-03-23T13:49:56.407Z"
+        "created_at": "2017-07-13T07:53:43.594Z",
+        "updated_at": "2017-07-13T07:53:43.594Z"
       },
       {
-        "user_id": 14587404967144,
         "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "sales_invoice_send_email",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": {
           "email_address": "info@example.com",
-          "email_message": "Geachte Foobar Holding B.V.,\n\nIn de bijlage kunt u factuur 2016-0001 voor onze diensten vinden. Wij verzoeken u vriendelijk de factuur voor 06-04-2016 te voldoen.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+          "email_message": "Geachte Foobar Holding B.V.,\n\nIn de bijlage kunt u factuur 2017-0003 voor onze diensten vinden. Wij verzoeken u vriendelijk de factuur voor 27-07-2017 te voldoen.\n\nMet vriendelijke groet,\n\nParkietje B.V."
         },
-        "created_at": "2016-03-23T13:49:56.603Z",
-        "updated_at": "2016-03-23T13:49:56.603Z"
+        "created_at": "2017-07-13T07:53:43.929Z",
+        "updated_at": "2017-07-13T07:53:43.929Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
+      }
+    ]
+  },
+  {
+    "id": "194733566982096143",
+    "administration_id": 123,
+    "contact_id": "194733566469342471",
+    "contact": {
+      "id": "194733566469342471",
+      "administration_id": 123,
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "attention": "",
+      "email": "info@example.com",
+      "email_ubl": true,
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:42.603Z",
+      "updated_at": "2017-07-13T07:53:42.603Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132/all",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "invoice_id": "2017-0002",
+    "recurring_sales_invoice_id": null,
+    "workflow_id": "194733447301826126",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
+    "state": "open",
+    "invoice_date": "2017-07-13",
+    "due_date": "2017-07-27",
+    "payment_conditions": "We verzoeken u vriendelijk het bovenstaande bedrag van {document.total_price} voor {document.due_date} te voldoen op onze bankrekening onder vermelding van het factuurnummer {document.invoice_id}. Voor vragen kunt u contact opnemen per e-mail.",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "discount": "0.0",
+    "original_sales_invoice_id": null,
+    "paid_at": null,
+    "sent_at": "2017-07-13",
+    "created_at": "2017-07-13T07:53:43.091Z",
+    "updated_at": "2017-07-13T07:53:43.362Z",
+    "details": [
+      {
+        "id": "194733566987339024",
+        "administration_id": 123,
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
+        "amount": "1 x",
+        "amount_decimal": "1.0",
+        "description": "Project X",
+        "price": "300.0",
+        "period": null,
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2017-07-13T07:53:43.096Z",
+        "updated_at": "2017-07-13T07:53:43.358Z"
+      }
+    ],
+    "payments": [
+
+    ],
+    "total_paid": "0.0",
+    "total_unpaid": "363.0",
+    "total_unpaid_base": "363.0",
+    "prices_are_incl_tax": false,
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/sales_invoices/ee32883b444f2e1b4cca79df9d17e22ae8dd7dd114ffa92bf39330f09f3eef8d/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ],
+    "events": [
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "sales_invoice_created",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": null,
+        "created_at": "2017-07-13T07:53:43.107Z",
+        "updated_at": "2017-07-13T07:53:43.107Z"
+      },
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "sales_invoice_send_email",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": {
+          "email_address": "info@example.com",
+          "email_message": "Geachte Foobar Holding B.V.,\n\nIn de bijlage kunt u factuur 2017-0002 voor onze diensten vinden. Wij verzoeken u vriendelijk de factuur voor 27-07-2017 te voldoen.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+        },
+        "created_at": "2017-07-13T07:53:43.437Z",
+        "updated_at": "2017-07-13T07:53:43.437Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
+      }
+    ]
+  },
+  {
+    "id": "194733566583637258",
+    "administration_id": 123,
+    "contact_id": "194733566469342471",
+    "contact": {
+      "id": "194733566469342471",
+      "administration_id": 123,
+      "company_name": "Foobar Holding B.V.",
+      "firstname": "",
+      "lastname": "",
+      "address1": "Hoofdstraat 12",
+      "address2": "",
+      "zipcode": "1234AB",
+      "city": "Amsterdam",
+      "country": "NL",
+      "phone": "",
+      "delivery_method": "Email",
+      "customer_id": "1",
+      "tax_number": "",
+      "chamber_of_commerce": "",
+      "bank_account": "",
+      "attention": "",
+      "email": "info@example.com",
+      "email_ubl": true,
+      "send_invoices_to_attention": "",
+      "send_invoices_to_email": "info@example.com",
+      "send_estimates_to_attention": "",
+      "send_estimates_to_email": "info@example.com",
+      "sepa_active": false,
+      "sepa_iban": "",
+      "sepa_iban_account_name": "",
+      "sepa_bic": "",
+      "sepa_mandate_id": "",
+      "sepa_mandate_date": null,
+      "sepa_sequence_type": "FRST",
+      "credit_card_number": "",
+      "credit_card_reference": "",
+      "credit_card_type": null,
+      "tax_number_validated_at": null,
+      "tax_number_valid": null,
+      "invoice_workflow_id": null,
+      "estimate_workflow_id": null,
+      "created_at": "2017-07-13T07:53:42.603Z",
+      "updated_at": "2017-07-13T07:53:42.603Z",
+      "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132/all",
+      "notes": [
+
+      ],
+      "custom_fields": [
+
+      ]
+    },
+    "invoice_id": "2017-0001",
+    "recurring_sales_invoice_id": null,
+    "workflow_id": "194733447301826126",
+    "document_style_id": "194733447704479320",
+    "identity_id": "194733446909658701",
+    "draft_id": null,
+    "state": "open",
+    "invoice_date": "2017-07-13",
+    "due_date": "2017-07-27",
+    "payment_conditions": "We verzoeken u vriendelijk het bovenstaande bedrag van {document.total_price} voor {document.due_date} te voldoen op onze bankrekening onder vermelding van het factuurnummer {document.invoice_id}. Voor vragen kunt u contact opnemen per e-mail.",
+    "reference": "Project X",
+    "language": "nl",
+    "currency": "EUR",
+    "discount": "0.0",
+    "original_sales_invoice_id": null,
+    "paid_at": null,
+    "sent_at": "2017-07-13",
+    "created_at": "2017-07-13T07:53:42.711Z",
+    "updated_at": "2017-07-13T07:53:42.919Z",
+    "details": [
+      {
+        "id": "194733566588880139",
+        "administration_id": 123,
+        "tax_rate_id": "194733446778586695",
+        "ledger_account_id": "194733446573065780",
+        "product_id": null,
+        "amount": "1 x",
+        "amount_decimal": "1.0",
+        "description": "Project X",
+        "price": "300.0",
+        "period": "20170701..20170731",
+        "row_order": 1,
+        "total_price_excl_tax_with_discount": "300.0",
+        "total_price_excl_tax_with_discount_base": "300.0",
+        "tax_report_reference": [
+          "NL/1a"
+        ],
+        "created_at": "2017-07-13T07:53:42.717Z",
+        "updated_at": "2017-07-13T07:53:42.916Z"
+      }
+    ],
+    "payments": [
+
+    ],
+    "total_paid": "0.0",
+    "total_unpaid": "363.0",
+    "total_unpaid_base": "363.0",
+    "prices_are_incl_tax": false,
+    "total_price_excl_tax": "300.0",
+    "total_price_excl_tax_base": "300.0",
+    "total_price_incl_tax": "363.0",
+    "total_price_incl_tax_base": "363.0",
+    "total_discount": "0.0",
+    "url": "http://moneybird.dev/123/sales_invoices/74a2cb84987e0a48aceddd29d582962ca832cb088c729f5c70386ee18a6b31f5/7ab9c063c7d9bde8103aa292f209607fd2f44b637d878b6389ef180822446132",
+    "custom_fields": [
+
+    ],
+    "notes": [
+
+    ],
+    "attachments": [
+
+    ],
+    "events": [
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "sales_invoice_created",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": null,
+        "created_at": "2017-07-13T07:53:42.728Z",
+        "updated_at": "2017-07-13T07:53:42.728Z"
+      },
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "sales_invoice_send_email",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": {
+          "email_address": "info@example.com",
+          "email_message": "Geachte Foobar Holding B.V.,\n\nIn de bijlage kunt u factuur 2017-0001 voor onze diensten vinden. Wij verzoeken u vriendelijk de factuur voor 27-07-2017 te voldoen.\n\nMet vriendelijke groet,\n\nParkietje B.V."
+        },
+        "created_at": "2017-07-13T07:53:42.972Z",
+        "updated_at": "2017-07-13T07:53:42.972Z"
+      }
+    ],
+    "tax_totals": [
+      {
+        "tax_rate_id": "194733446778586695",
+        "taxable_amount": "300.0",
+        "taxable_amount_base": "300.0",
+        "tax_amount": "63.0",
+        "tax_amount_base": "63.0"
       }
     ]
   }

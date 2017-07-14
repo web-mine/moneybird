@@ -9,6 +9,7 @@ module Moneybird::Resource
       administration_id
       contact_id
       contact
+      custom_fields
       workflow_id
       start_date
       invoice_date
