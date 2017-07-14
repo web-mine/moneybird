@@ -25,7 +25,6 @@ module Moneybird
         uri = uri_for_path(base_url)
         http = Faraday.new(:url => uri) do |faraday|
           faraday.request  :url_encoded
-          faraday.response :logger
           faraday.adapter  faraday_adapter
         end
         http
