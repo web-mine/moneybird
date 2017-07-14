@@ -1,6 +1,66 @@
-[
+   [
   {
-    "id": "151540738521302020",
+    "id": "194733474227160970",
+    "administration_id": 123,
+    "company_name": "Foobar Holding B.V.",
+    "firstname": "",
+    "lastname": "",
+    "address1": "Hoofdstraat 12",
+    "address2": "",
+    "zipcode": "1234AB",
+    "city": "Amsterdam",
+    "country": "NL",
+    "phone": "",
+    "delivery_method": "Email",
+    "customer_id": "3",
+    "tax_number": "",
+    "chamber_of_commerce": "",
+    "bank_account": "",
+    "attention": "",
+    "email": "info@example.com",
+    "email_ubl": true,
+    "send_invoices_to_attention": "",
+    "send_invoices_to_email": "info@example.com",
+    "send_estimates_to_attention": "",
+    "send_estimates_to_email": "info@example.com",
+    "sepa_active": false,
+    "sepa_iban": "",
+    "sepa_iban_account_name": "",
+    "sepa_bic": "",
+    "sepa_mandate_id": "",
+    "sepa_mandate_date": null,
+    "sepa_sequence_type": "FRST",
+    "credit_card_number": "",
+    "credit_card_reference": "",
+    "credit_card_type": null,
+    "tax_number_validated_at": null,
+    "tax_number_valid": null,
+    "invoice_workflow_id": null,
+    "estimate_workflow_id": null,
+    "created_at": "2017-07-13T07:52:14.634Z",
+    "updated_at": "2017-07-13T07:52:14.634Z",
+    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/59481dc990fb2c7444c404cb15f06697dc41e56fe151df0fbf29e209ef7be486/all",
+    "notes": [
+
+    ],
+    "custom_fields": [
+
+    ],
+    "events": [
+      {
+        "administration_id": 123,
+        "user_id": 1499932307207,
+        "action": "contact_created",
+        "link_entity_id": null,
+        "link_entity_type": null,
+        "data": null,
+        "created_at": "2017-07-13T07:52:14.642Z",
+        "updated_at": "2017-07-13T07:52:14.642Z"
+      }
+    ]
+  },
+  {
+    "id": "194733474162149252",
     "administration_id": 123,
     "company_name": "Foobar Holding B.V.",
     "firstname": "John",
@@ -18,6 +78,7 @@
     "bank_account": "",
     "attention": "",
     "email": "info@example.com",
+    "email_ubl": true,
     "send_invoices_to_attention": "",
     "send_invoices_to_email": "info@example.com",
     "send_estimates_to_attention": "",
@@ -33,11 +94,12 @@
     "credit_card_reference": "",
     "credit_card_type": null,
     "tax_number_validated_at": null,
-    "created_at": "2016-03-23T13:42:11.993Z",
-    "updated_at": "2016-03-23T13:42:11.993Z",
-    "email_ubl": true,
-    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/fb34468cc26829306558e3be084dd7cd3ef5dd04e31cd1e8b26fb17660e4aa97/all",
-
+    "tax_number_valid": null,
+    "invoice_workflow_id": null,
+    "estimate_workflow_id": null,
+    "created_at": "2017-07-13T07:52:14.572Z",
+    "updated_at": "2017-07-13T07:52:14.572Z",
+    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/e59a49d5fbbc3abff472848935402c99b6b2835f26ec525056f5786a41dc3f29/all",
     "notes": [
 
     ],
@@ -46,19 +108,19 @@
     ],
     "events": [
       {
-        "user_id": 14587404967144,
         "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "contact_created",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": null,
-        "created_at": "2016-03-23T13:42:12.002Z",
-        "updated_at": "2016-03-23T13:42:12.002Z"
+        "created_at": "2017-07-13T07:52:14.580Z",
+        "updated_at": "2017-07-13T07:52:14.580Z"
       }
     ]
   },
   {
-    "id": "151540738555905031",
+    "id": "194733474199897991",
     "administration_id": 123,
     "company_name": "Foobar Holding B.V.",
     "firstname": "John",
@@ -73,9 +135,10 @@
     "customer_id": "2",
     "tax_number": "",
     "chamber_of_commerce": "",
-    "bank_account": "",
+    "bank_account": "NL51RABO0330707736",
     "attention": "",
     "email": "info@example.com",
+    "email_ubl": true,
     "send_invoices_to_attention": "",
     "send_invoices_to_email": "info@example.com",
     "send_estimates_to_attention": "",
@@ -91,11 +154,12 @@
     "credit_card_reference": "",
     "credit_card_type": null,
     "tax_number_validated_at": null,
-    "created_at": "2016-03-23T13:42:12.025Z",
-    "updated_at": "2016-03-23T13:42:12.025Z",
-    "email_ubl": true,
-    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/fb34468cc26829306558e3be084dd7cd3ef5dd04e31cd1e8b26fb17660e4aa97/all",
-
+    "tax_number_valid": null,
+    "invoice_workflow_id": null,
+    "estimate_workflow_id": null,
+    "created_at": "2017-07-13T07:52:14.608Z",
+    "updated_at": "2017-07-13T07:52:14.608Z",
+    "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/4761794890a379797fcc02e77a8f21ab1eb621f2aa879766568afb6a24582d3b/all",
     "notes": [
 
     ],
@@ -104,14 +168,14 @@
     ],
     "events": [
       {
-        "user_id": 14587404967144,
         "administration_id": 123,
+        "user_id": 1499932307207,
         "action": "contact_created",
         "link_entity_id": null,
         "link_entity_type": null,
         "data": null,
-        "created_at": "2016-03-23T13:42:12.034Z",
-        "updated_at": "2016-03-23T13:42:12.034Z"
+        "created_at": "2017-07-13T07:52:14.616Z",
+        "updated_at": "2017-07-13T07:52:14.616Z"
       }
     ]
   }

@@ -14,7 +14,7 @@ describe Moneybird::Service::Contact do
     it "returns list of contacts" do
       contacts = service.all
 
-      contacts.length.must_equal 2
+      contacts.length.must_equal 3
       contacts.first.company_name.must_equal "Foobar Holding B.V."
     end
   end
@@ -23,7 +23,7 @@ describe Moneybird::Service::Contact do
     it "returns a non persisted contact" do
       contact = service.build(hash_response(:contacts).first)
 
-      contact.firstname.must_equal "John"
+      contact.company_name.must_equal "Foobar Holding B.V."
     end
   end
 

@@ -1,26 +1,27 @@
-{
-  "id": "143273870053344266",
+ {
+  "id": "194733475997157302",
   "administration_id": 123,
-  "company_name": "Test B.V.",
-  "firstname": "Foo",
-  "lastname": "Bar",
-  "attention": "",
-  "address1": "",
+  "company_name": "Foobar Holding B.V.",
+  "firstname": "John",
+  "lastname": "Appleseed",
+  "address1": "Hoofdstraat 12",
   "address2": "",
-  "zipcode": "",
-  "city": "",
+  "zipcode": "1234 AB",
+  "city": "Amsterdam",
   "country": "NL",
-  "email": "",
   "phone": "",
   "delivery_method": "Email",
-  "customer_id": "3",
+  "customer_id": "1",
   "tax_number": "",
   "chamber_of_commerce": "",
   "bank_account": "",
+  "attention": "",
+  "email": "info@example.com",
+  "email_ubl": true,
   "send_invoices_to_attention": "",
-  "send_invoices_to_email": "",
+  "send_invoices_to_email": "info@example.com",
   "send_estimates_to_attention": "",
-  "send_estimates_to_email": "",
+  "send_estimates_to_email": "info@example.com",
   "sepa_active": false,
   "sepa_iban": "",
   "sepa_iban_account_name": "",
@@ -32,8 +33,12 @@
   "credit_card_reference": "",
   "credit_card_type": null,
   "tax_number_validated_at": null,
-  "created_at": "2015-12-23T07:43:51.778Z",
-  "updated_at": "2015-12-23T07:43:51.778Z",
+  "tax_number_valid": null,
+  "invoice_workflow_id": null,
+  "estimate_workflow_id": null,
+  "created_at": "2017-07-13T07:52:16.322Z",
+  "updated_at": "2017-07-13T07:52:16.322Z",
+  "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/e0dc4f48ad7bd8f3746d55e97b09482e027029b6cf5bf1f84475fec7d2a57301/all",
   "notes": [
 
   ],
@@ -43,16 +48,13 @@
   "events": [
     {
       "administration_id": 123,
-      "user_id": 14715230101318,
+      "user_id": 1499932307207,
       "action": "contact_created",
       "link_entity_id": null,
       "link_entity_type": null,
       "data": null,
-      "created_at": "2016-08-18T12:24:16.245Z",
-      "updated_at": "2016-08-18T12:24:16.245Z"
+      "created_at": "2017-07-13T07:52:16.331Z",
+      "updated_at": "2017-07-13T07:52:16.331Z"
     }
-  ],
-  "email_ubl": true,
-  "sales_invoices_url": "http://moneybird.dev/123/sales_invoices/fb34468cc26829306558e3be084dd7cd3ef5dd04e31cd1e8b26fb17660e4aa97/all"
-
+  ]
 }

@@ -20,7 +20,7 @@ describe Moneybird::Resource::Administration do
     client.http.register_request(:GET, '/api/v2/123/contacts', FakeResponse.new(200, json_response(:contacts)))
 
     contacts = administration.contacts.all
-    contacts.length.must_equal 2
+    contacts.length.must_equal 3
   end
 
   it "has a list of estimates" do

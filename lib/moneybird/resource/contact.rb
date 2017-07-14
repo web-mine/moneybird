@@ -38,6 +38,7 @@ module Moneybird::Resource
       credit_card_reference
       credit_card_type
       tax_number_validated_at
+      tax_number_valid
       created_at
       updated_at
       notes
