@@ -4,27 +4,29 @@ module Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
 
     has_attributes %i(
-      id
+      account_servicer_transaction_id
       administration_id
       amount
+      amount_open
+      batch_reference
       code
-      date
-      message
       contra_account_name
       contra_account_number
-      state
-      amount_open
-      sepa_fields
-      batch_reference
-      financial_account_id
-      currency
-      original_amount
-      financial_statement_id
-      processed_at
-      payments
-      ledger_account_bookings
       created_at
+      currency
+      date
+      financial_account_id
+      financial_statement_id
+      id
+      ledger_account_bookings
+      message
+      original_amount
+      payments
+      processed_at
+      sepa_fields
+      state
       updated_at
+      version
     )
   end
 end

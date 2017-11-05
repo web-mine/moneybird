@@ -4,46 +4,47 @@ module Moneybird::Resource
     extend Moneybird::Resource::ClassMethods
 
     has_attributes %i(
-      id
+      accepted_at
       administration_id
-      contact_id
+      archived_at
+      attachments
       contact
-      details
-      draft_id
-      estimate_id
-      workflow_id
-      document_style_id
-      identity_id
-      state
-      estimate_date
-      due_date
-      reference
-      language
+      contact_id
+      created_at
       currency
-      exchange_rate
+      custom_fields
+      details
       discount
+      document_style_id
+      draft_id
+      due_date
+      estimate_date
+      estimate_id
+      events
+      exchange_rate
+      id
+      identity_id
+      language
+      notes
       original_estimate_id
+      post_text
+      pre_text
+      reference
+      rejected_at
+      sent_at
       show_tax
       sign_online
-      sent_at
-      accepted_at
-      rejected_at
-      archived_at
-      created_at
-      updated_at
+      state
       tax_totals
       total_discount
-      pre_text
-      post_text
       total_price_excl_tax
       total_price_excl_tax_base
       total_price_incl_tax
       total_price_incl_tax_base
+      updated_at
       url
-      custom_fields
-      notes
-      attachments
-      events
+      version
+      workflow_id
     )
 
     def notes=(notes)

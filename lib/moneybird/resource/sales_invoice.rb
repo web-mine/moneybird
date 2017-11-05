@@ -42,6 +42,7 @@ module Moneybird::Resource
       total_unpaid_base
       updated_at
       url
+      version
       workflow_id
       events
     )

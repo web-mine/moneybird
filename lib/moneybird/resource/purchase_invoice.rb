@@ -31,6 +31,7 @@ module Moneybird::Resource
       total_price_incl_tax
       total_price_incl_tax_base
       updated_at
+      version
     )
 
     def notes=(notes)
