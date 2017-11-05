@@ -57,7 +57,7 @@ module Moneybird
 
       def logger
         @logger ||= begin
-          logger = Logger.new(STDOUT)
+          Logger.new(STDOUT)
         end
       end
 
