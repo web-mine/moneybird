@@ -24,7 +24,7 @@ class FakeHttp
     @requests ||= []
     @requests << [http_request.method.to_s,  http_request.path, http_request.body]
 
-    @_next_response || mapped_response(http_request.method, http_request.path) || raise("No reponse registered for #{net_http_request.method}: #{net_http_request.path}")
+    @_next_response || mapped_response(http_request.method, http_request.path) || raise("No reponse registered for #{http_request.method}: #{http_request.path}")
   end
 
   def register_request(method, path, response)
