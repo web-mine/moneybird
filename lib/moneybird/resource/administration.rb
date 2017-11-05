@@ -63,5 +63,25 @@ module Moneybird::Resource
     def financial_mutations
       Moneybird::Service::FinancialMutation.new(@client, id)
     end
+
+    def general_documents
+      Moneybird::Service::Document::GeneralDocument.new(@client, id)
+    end
+
+    def general_journal_documents
+      Moneybird::Service::Document::GeneralJournalDocument.new(@client, id)
+    end
+
+    def receipts
+      Moneybird::Service::Document::Receipt.new(@client, id)
+    end
+
+    def purchase_invoice_documents
+      Moneybird::Service::Document::PurchaseInvoice.new(@client, id)
+    end
+
+    def typeless_documents
+      Moneybird::Service::Document::TypelessDocument.new(@client, id)
+    end
   end
 end

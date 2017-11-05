@@ -1,6 +1,5 @@
 module Moneybird
   module Resource
-    attr_reader :attributes
     attr_accessor :errors, :client
 
     def initialize(attributes)

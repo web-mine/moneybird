@@ -1,0 +1,26 @@
+module Moneybird::Resource::Documents
+  class TypelessDocument
+    include Moneybird::Resource
+    extend Moneybird::Resource::ClassMethods
+
+    has_attributes %i(
+      id
+      administration_id
+      contact
+      contact_id
+      reference
+      date
+      due_date
+      entry_number
+      state
+      exchange_rate
+      created_at
+      updated_at
+      version
+      notes
+      attachments
+      events
+      origin
+    )
+  end
+end
