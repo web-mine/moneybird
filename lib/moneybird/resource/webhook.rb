@@ -11,6 +11,10 @@ module Moneybird::Resource
       last_http_body
       events
     )
+
+    def to_json
+      JSON.generate(attributes.as_json)
+    end
   end
 end
 
