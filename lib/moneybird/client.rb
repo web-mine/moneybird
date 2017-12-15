@@ -27,6 +27,7 @@ module Moneybird
         faraday.headers = faraday_headers
         faraday.request :url_encoded
         faraday.response :json
+        faraday.use Moneybird::Middleware::ErrorHandling
         faraday.adapter faraday_adapter
       end
     end

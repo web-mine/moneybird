@@ -104,8 +104,9 @@ describe Moneybird::Service::Contact do
       stub_request(:get, "https://moneybird.com/api/v2/123/contacts/#{id}")
         .to_return(status: 404, body: fixture_response(:error))
 
-      resource = service.find(id)
-      resource.must_be_nil
+      assert_raises Moneybird::HttpError::NotFound do
+        service.find(id)
+      end
     end
   end
 
@@ -124,8 +125,9 @@ describe Moneybird::Service::Contact do
       stub_request(:get, "https://moneybird.com/api/v2/123/contacts/customer_id/#{customer_id}")
         .to_return(status: 404, body: fixture_response(:error))
 
-      resource = service.find_by_customer_id(customer_id)
-      resource.must_be_nil
+      assert_raises Moneybird::HttpError::NotFound do
+        service.find_by_customer_id(customer_id)
+      end
     end
   end
 end
