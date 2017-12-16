@@ -54,7 +54,7 @@ module Moneybird
       while path
         response = http.get(path, options)
         yield response.body
-        path = response[:pagination_links]&.next
+        path = (response[:pagination_links].next if response[:pagination_links])
       end
     end
 
