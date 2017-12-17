@@ -28,6 +28,10 @@ module Moneybird
         faraday.request :url_encoded
         faraday.response :json
         faraday.use Moneybird::Middleware::ErrorHandling
+        faraday.use Moneybird::Middleware::Pagination
+        # faraday.response :logger do |logger|
+        #   logger.filter(/(Bearer)\s(\S+)/, '\1[REMOVED]')
+        # end
         faraday.adapter faraday_adapter
       end
     end
@@ -35,6 +39,22 @@ module Moneybird
     %i[get patch post delete].each do |call|
       define_method call do |path, options = {}|
         http.public_send(call, "/api/#{version}/#{path}", options).body
+      end
+    end
+
+    def get_all_pages(path, options = {})
+      get_each_page(path, options).inject([]) do |array, objects|
+        array += objects
+      end
+    end
+
+    def get_each_page(path, options = {})
+      return enum_for(:get_each_page, path, options) unless block_given?
+      path = "/api/#{version}/#{path}"
+      while path
+        response = http.get(path, options)
+        yield response.body
+        path = (response[:pagination_links].next if response[:pagination_links])
       end
     end
 
