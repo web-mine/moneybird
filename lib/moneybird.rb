@@ -18,10 +18,88 @@ end
 
 require 'moneybird/resource'
 
-Dir[File.join(File.dirname(__FILE__), 'moneybird', 'traits', '*.rb')].each  do |file|
-  require file
-end
+##
+# Http Errors
+require 'moneybird/http_error/authorization_required'
+require 'moneybird/http_error/bad_request'
+require 'moneybird/http_error/forbidden'
+require 'moneybird/http_error/internal_server_error'
+require 'moneybird/http_error/method_not_allowed'
+require 'moneybird/http_error/not_accepted'
+require 'moneybird/http_error/not_found'
+require 'moneybird/http_error/payment_required'
+require 'moneybird/http_error/too_many_requests'
+require 'moneybird/http_error/unprocessable_entity'
 
-Dir[File.join(File.dirname(__FILE__), 'moneybird', '**', '**.rb')].each  do |file|
-  require file
-end
+##
+# Middleware
+require 'moneybird/middleware/error_handling' # Depends on http errors
+require 'moneybird/middleware/pagination/links'
+require 'moneybird/middleware/pagination' # Depends on links
+
+##
+# Resources (all depend on resource)
+require 'moneybird/resource/documents/general_document'
+require 'moneybird/resource/documents/general_journal_document'
+require 'moneybird/resource/documents/purchase_invoice'
+require 'moneybird/resource/documents/receipt'
+require 'moneybird/resource/documents/typeless_document'
+require 'moneybird/resource/generic/event'
+require 'moneybird/resource/generic/note'
+require 'moneybird/resource/invoice/details'
+require 'moneybird/resource/invoice/payment'
+require 'moneybird/resource/contact' # Depends on generic resources
+require 'moneybird/resource/document_style'
+require 'moneybird/resource/estimate'
+require 'moneybird/resource/financial_account'
+require 'moneybird/resource/financial_mutation'
+require 'moneybird/resource/identity'
+require 'moneybird/resource/ledger_account'
+require 'moneybird/resource/product'
+require 'moneybird/resource/purchase_invoice' # Depends on generic and invoice resources
+require 'moneybird/resource/recurring_sales_invoice' # Depends on generic and invoice resources
+require 'moneybird/resource/sales_invoice' # Depends on generic and invoice resources
+require 'moneybird/resource/synchronization'
+require 'moneybird/resource/tax_rate'
+require 'moneybird/resource/webhook'
+require 'moneybird/resource/workflow'
+
+##
+# Traits
+require 'moneybird/traits/administration_service'
+require 'moneybird/traits/delete'
+require 'moneybird/traits/find'
+require 'moneybird/traits/find_all'
+require 'moneybird/traits/save'
+require 'moneybird/traits/service'
+require 'moneybird/traits/synchronization' # Depends on synchronization resource
+
+##
+# Services (all depend on traits and it's associated resource)
+require 'moneybird/service/documents/general_document'
+require 'moneybird/service/documents/general_journal_document'
+require 'moneybird/service/documents/purchase_invoice'
+require 'moneybird/service/documents/receipt'
+require 'moneybird/service/documents/typeless_document'
+require 'moneybird/service/contact'
+require 'moneybird/service/document_style'
+require 'moneybird/service/estimate'
+require 'moneybird/service/financial_account'
+require 'moneybird/service/financial_mutation'
+require 'moneybird/service/identity'
+require 'moneybird/service/ledger_account'
+require 'moneybird/service/product'
+require 'moneybird/service/purchase_invoice'
+require 'moneybird/service/recurring_sales_invoice'
+require 'moneybird/service/sales_invoice'
+require 'moneybird/service/tax_rate'
+require 'moneybird/service/webhook'
+require 'moneybird/service/workflow'
+
+##
+# Special cases
+require 'moneybird/resource/administration' # Depends on services
+require 'moneybird/service/administration' # Depends on administration resource
+require 'moneybird/client'
+require 'moneybird/version'
+require 'moneybird/webhook'
