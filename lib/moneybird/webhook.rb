@@ -9,6 +9,7 @@ module Moneybird
       entity_type
       entity_id
       state
+      action
       entity
     )
 

@@ -20,6 +20,7 @@ module Moneybird::Resource
       identity_id
       invoice_date
       invoice_id
+      invoice_sequence_id
       language
       notes
       original_sales_invoice_id
