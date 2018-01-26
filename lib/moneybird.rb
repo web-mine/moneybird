@@ -73,6 +73,7 @@ require 'moneybird/traits/find_all'
 require 'moneybird/traits/save'
 require 'moneybird/traits/service'
 require 'moneybird/traits/synchronization' # Depends on synchronization resource
+require 'moneybird/traits/send_invoice'
 
 ##
 # Services (all depend on traits and it's associated resource)

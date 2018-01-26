@@ -17,4 +17,15 @@ describe Moneybird::Service::SalesInvoice do
       sales_invoices.first.id.must_equal "194733567493801235"
     end
   end
+
+  describe "#send" do
+    before do
+      stub_request(:patch, 'https://moneybird.com/api/v2/123/sales_invoices/456/send_invoice')
+        .to_return(status: 200)
+    end
+    let(:sales_invoice) { Moneybird::Resource::SalesInvoice.new(client: client, id: '456') }
+    it "will send the invoice" do
+      service.send_invoice(sales_invoice)
+    end
+  end
 end

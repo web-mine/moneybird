@@ -56,6 +56,11 @@ module Moneybird::Resource
       @contact = Moneybird::Resource::Contact.build(attributes)
     end
 
+    def send_invoice(options = {})
+      invoice_service = Moneybird::Service::SalesInvoice.new(@client, administration_id)
+      invoice_service.send_invoice(self, options)
+    end
+
     def details=(line_items)
       @details = line_items.map{ |line_item| Moneybird::Resource::Invoice::Details.build(line_item) }
     end
