@@ -96,6 +96,7 @@ require 'moneybird/service/sales_invoice'
 require 'moneybird/service/tax_rate'
 require 'moneybird/service/webhook'
 require 'moneybird/service/workflow'
+require 'moneybird/service/payment'
 
 ##
 # Special cases
