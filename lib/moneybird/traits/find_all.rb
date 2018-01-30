@@ -15,7 +15,6 @@ module Moneybird
       def each(params = {})
         return enum_for(:each, params) unless block_given?
         if preloaded_data
-          puts 'preloaded data set'
           preloaded_data.each do |data|
             yield data
           end
