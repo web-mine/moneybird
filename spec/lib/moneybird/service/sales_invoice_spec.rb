@@ -18,6 +18,28 @@ describe Moneybird::Service::SalesInvoice do
     end
   end
 
+  describe "#save" do
+    let(:id) { '1' }
+    let(:attributes) { { id: id, reference: 'FooBar' } }
+
+    it "creates when not persisted" do
+      stub_request(:post, "https://moneybird.com/api/v2/123/sales_invoices")
+        .to_return(status: 201, body: fixture_response(:sales_invoice))
+      attributes.delete(:id)
+
+      resource = service.build(attributes)
+      service.save(resource).must_equal resource
+    end
+
+    it "updates when persisted" do
+      stub_request(:patch, "https://moneybird.com/api/v2/123/sales_invoices/#{id}")
+        .to_return(status: 200, body: fixture_response(:sales_invoice))
+
+      resource = service.build(attributes)
+      service.save(resource).must_equal resource
+    end
+  end
+
   describe "#send" do
     before do
       stub_request(:patch, 'https://moneybird.com/api/v2/123/sales_invoices/456/send_invoice')
