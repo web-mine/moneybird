@@ -1,12 +1,12 @@
 module Moneybird
   module Traits
     module SendInvoice
-      def resource_path(resource)
+      def send_invoice_path(resource)
         [path, resource.path, '/send_invoice'].join('')
       end
 
       def send_invoice(resource, options = {})
-        client.patch(resource_path(resource), options.to_json)
+        client.patch(send_invoice_path(resource), options.to_json)
       end
     end
   end
