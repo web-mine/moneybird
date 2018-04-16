@@ -57,8 +57,13 @@ module Moneybird::Resource
     end
 
     def send_invoice(options = {})
-      invoice_service = Moneybird::Service::SalesInvoice.new(@client, administration_id)
+      invoice_service = Moneybird::Service::SalesInvoice.new(client, administration_id)
       invoice_service.send_invoice(self, options)
+    end
+
+    def payments=(payments)
+      payment_data = payments.map{ |payment| Moneybird::Resource::Invoice::Payment.build(payment) }
+      @payments = Moneybird::Service::Payment.new(client, administration_id, preloaded_data: payment_data, invoice_id: id)
     end
 
     def details=(line_items)

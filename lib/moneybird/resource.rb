@@ -16,6 +16,7 @@ module Moneybird
 
     def attributes=(attributes)
       @attributes = attributes
+      self.client ||= attributes[:client]
       attributes.each do |attribute, value|
         if respond_to?(writer = attribute.to_s + '=')
           send(writer, value)

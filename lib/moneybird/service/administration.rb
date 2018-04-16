@@ -3,10 +3,11 @@ module Moneybird::Service
     include Moneybird::Traits::FindAll
     include Moneybird::Traits::Service
 
-    attr_reader :client
+    attr_reader :client, :preloaded_data
 
     def initialize(client)
       @client = client
+      @preloaded_data = nil
     end
 
     def find(id)
