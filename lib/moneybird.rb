@@ -56,7 +56,6 @@ require 'moneybird/resource/financial_mutation'
 require 'moneybird/resource/identity'
 require 'moneybird/resource/ledger_account'
 require 'moneybird/resource/product'
-require 'moneybird/resource/purchase_invoice' # Depends on generic and invoice resources
 require 'moneybird/resource/recurring_sales_invoice' # Depends on generic and invoice resources
 require 'moneybird/resource/sales_invoice' # Depends on generic and invoice resources
 require 'moneybird/resource/synchronization'
@@ -90,7 +89,6 @@ require 'moneybird/service/financial_mutation'
 require 'moneybird/service/identity'
 require 'moneybird/service/ledger_account'
 require 'moneybird/service/product'
-require 'moneybird/service/purchase_invoice'
 require 'moneybird/service/recurring_sales_invoice'
 require 'moneybird/service/sales_invoice'
 require 'moneybird/service/tax_rate'

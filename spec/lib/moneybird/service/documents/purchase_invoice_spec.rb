@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe Moneybird::Service::PurchaseInvoice do
+describe Moneybird::Service::Document::PurchaseInvoice do
   let(:client) { Moneybird::Client.new('bearer token') }
-  let(:service) { Moneybird::Service::PurchaseInvoice.new(client, '123') }
+  let(:service) { Moneybird::Service::Document::PurchaseInvoice.new(client, '123') }
 
   describe "#all" do
     before do
