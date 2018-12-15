@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "link_header", "~> 0.0.8"
 
   spec.add_development_dependency "bundler", "~> 1.11"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "codeclimate-test-reporter"
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "webmock", "~> 3.1"
