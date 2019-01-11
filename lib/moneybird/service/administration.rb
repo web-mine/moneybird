@@ -21,7 +21,7 @@ module Moneybird::Service
     end
 
     def path
-      '/administrations'
+      'administrations'
     end
   end
 end

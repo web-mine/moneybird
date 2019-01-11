@@ -16,12 +16,12 @@ describe Moneybird::Middleware::ErrorHandling do
       if Moneybird::Middleware::ErrorHandling::ERROR_MAP.key? status
         it "raises #{Moneybird::Middleware::ErrorHandling::ERROR_MAP[status]}" do
           assert_raises Moneybird::Middleware::ErrorHandling::ERROR_MAP[status] do
-            client.get("/#{status}")
+            client.get("#{status}")
           end
         end
       else
         it 'does not raise error' do
-          client.get("/#{status}")
+          client.get("#{status}")
         end
       end
     end
