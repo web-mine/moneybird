@@ -23,7 +23,7 @@ describe Moneybird::Client do
     it "posts and parses json" do
       stub_request(:post, 'https://moneybird.com/api/v2/path')
         .to_return(status: 200, body: { foo: 'bar' }.to_json)
-      client.post('/path', 'body').must_equal('foo' => 'bar')
+      client.post('path', 'body').must_equal('foo' => 'bar')
     end
   end
 
@@ -31,7 +31,7 @@ describe Moneybird::Client do
     it "gets and parses json" do
       stub_request(:get, 'https://moneybird.com/api/v2/path')
         .to_return(status: 200, body: { foo: 'bar' }.to_json)
-      client.get('/path').must_equal('foo' => 'bar')
+      client.get('path').must_equal('foo' => 'bar')
     end
   end
 
@@ -39,7 +39,7 @@ describe Moneybird::Client do
     it "patches and parses json" do
       stub_request(:patch, 'https://moneybird.com/api/v2/path')
         .to_return(status: 200, body: { foo: 'bar' }.to_json)
-      client.patch('/path', 'body').must_equal('foo' => 'bar')
+      client.patch('path', 'body').must_equal('foo' => 'bar')
     end
   end
 
@@ -47,7 +47,7 @@ describe Moneybird::Client do
     it "deletes and parses json" do
       stub_request(:delete, 'https://moneybird.com/api/v2/path')
         .to_return(status: 200, body: { foo: 'bar' }.to_json)
-      client.delete('/path').must_equal('foo' => 'bar')
+      client.delete('path').must_equal('foo' => 'bar')
     end
   end
 
@@ -64,7 +64,7 @@ describe Moneybird::Client do
       stub_request(:get, 'https://moneybird.com/api/v2/path?page=2')
         .to_return(status: 200, body: '[{"id":"3"}, {"id":"4"}]')
 
-      client.get_all_pages('/path').must_equal([{ 'id' => '1' }, { 'id' => '2' }, { 'id' => '3' }, { 'id' => '4' }])
+      client.get_all_pages('path').must_equal([{ 'id' => '1' }, { 'id' => '2' }, { 'id' => '3' }, { 'id' => '4' }])
     end
   end
 end

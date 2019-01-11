@@ -29,9 +29,7 @@ module Moneybird
         faraday.response :json
         faraday.use Moneybird::Middleware::ErrorHandling
         faraday.use Moneybird::Middleware::Pagination
-        # faraday.response :logger do |logger|
-        #   logger.filter(/(Bearer)\s(\S+)/, '\1[REMOVED]')
-        # end
+
         faraday.adapter faraday_adapter
       end
     end
