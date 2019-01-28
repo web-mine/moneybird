@@ -25,9 +25,12 @@ module Moneybird::Resource
       notes
       original_sales_invoice_id
       paid_at
+      paused
       payment_conditions
+      payment_reference
       payments
       prices_are_incl_tax
+      public_view_code
       recurring_sales_invoice_id
       reference
       sent_at
@@ -75,4 +78,3 @@ module Moneybird::Resource
     end
   end
 end
-
