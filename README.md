@@ -46,7 +46,7 @@ administration.contacts.find(moneybird_id)
 administration.contacts.find_by_customer_id(customer_id)
 
 # Create contact
-administrations.contacts.create(company_name: 'ACME', firstname: 'Foo', lastname: 'Bar')
+administration.contacts.create(company_name: 'ACME', firstname: 'Foo', lastname: 'Bar')
 
 # Update contact
 contact = administration.contacts.all.first
