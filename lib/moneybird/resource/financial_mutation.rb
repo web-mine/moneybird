@@ -34,9 +34,4 @@ module Moneybird::Resource
     financial_mutation_service = Moneybird::Service::FinancialMutation.new(client, administration_id)
     financial_mutation_service.link_booking(self, booking)
   end
-
-  # def unlink_booking(booking)
-  #   financial_mutation_service = Moneybird::Service::FinancialMutation.new(client, administration_id)
-  #   financial_mutation_service.unlink_booking(self, booking)
-  # end
 end

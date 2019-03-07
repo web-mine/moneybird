@@ -9,10 +9,6 @@ module Moneybird::Service
       client.patch("#{resource_path(resource)}/link_booking", booking.to_json)
     end
 
-    # def unlink_booking(resource, booking)
-    #   client.delete("#{resource_path(resource)}/unlink_booking", booking.to_json)
-    # end
-
     private
 
     def resource_class
