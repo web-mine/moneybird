@@ -29,4 +29,9 @@ module Moneybird::Resource
       version
     )
   end
+
+  def link_booking(booking)
+    financial_mutation_service = Moneybird::Service::FinancialMutation.new(client, administration_id)
+    financial_mutation_service.link_booking(self, booking)
+  end
 end

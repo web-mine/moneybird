@@ -1,10 +1,6 @@
 module Moneybird
   module Traits
     module Save
-      def resource_path(resource)
-        [path, resource.path].join('')
-      end
-
       def save(resource)
         response =
           if resource.persisted?
