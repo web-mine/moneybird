@@ -6,7 +6,9 @@ module Moneybird
       end
 
       def send_invoice(resource, options = {})
-        client.patch(send_invoice_path(resource), options.to_json)
+        response = client.patch(send_invoice_path(resource), options.to_json)
+        resource.attributes = response
+        resource
       end
     end
   end
