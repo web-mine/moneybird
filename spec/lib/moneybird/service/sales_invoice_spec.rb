@@ -40,14 +40,14 @@ describe Moneybird::Service::SalesInvoice do
     end
   end
 
-  describe "#send" do
+  describe "#send_invoice" do
     before do
       stub_request(:patch, 'https://moneybird.com/api/v2/123/sales_invoices/456/send_invoice')
-        .to_return(status: 200)
+        .to_return(status: 200, body: fixture_response(:sales_invoice))
     end
     let(:sales_invoice) { Moneybird::Resource::SalesInvoice.new(client: client, id: '456') }
     it "will send the invoice" do
-      service.send_invoice(sales_invoice)
+      service.send_invoice(sales_invoice).must_equal sales_invoice
     end
   end
 end
