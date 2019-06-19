@@ -64,6 +64,11 @@ module Moneybird::Resource
       invoice_service.send_invoice(self, options)
     end
 
+    def mark_as_uncollectible(options = {})
+      invoice_service = Moneybird::Service::SalesInvoice.new(client, administration_id)
+      invoice_service.mark_as_uncollectible(self, options)
+    end
+
     def payments=(payments)
       payment_data = payments.map{ |payment| Moneybird::Resource::Invoice::Payment.build(payment) }
       @payments = Moneybird::Service::Payment.new(client, administration_id, preloaded_data: payment_data, invoice_id: id)

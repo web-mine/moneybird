@@ -69,6 +69,7 @@ require 'moneybird/traits/administration_service'
 require 'moneybird/traits/delete'
 require 'moneybird/traits/find'
 require 'moneybird/traits/find_all'
+require 'moneybird/traits/mark_as_uncollectible'
 require 'moneybird/traits/save'
 require 'moneybird/traits/service'
 require 'moneybird/traits/synchronization' # Depends on synchronization resource

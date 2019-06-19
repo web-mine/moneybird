@@ -50,4 +50,15 @@ describe Moneybird::Service::SalesInvoice do
       service.send_invoice(sales_invoice).must_equal sales_invoice
     end
   end
+
+  describe "#mark_as_uncollectible" do
+    before do
+      stub_request(:patch, 'https://moneybird.com/api/v2/123/sales_invoices/456/mark_as_uncollectible')
+        .to_return(status: 200, body: fixture_response(:sales_invoice))
+    end
+    let(:sales_invoice) { Moneybird::Resource::SalesInvoice.new(client: client, id: '456') }
+    it "will mark the invoice as uncollectible" do
+      service.mark_as_uncollectible(sales_invoice).must_equal sales_invoice
+    end
+  end
 end

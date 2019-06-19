@@ -8,6 +8,7 @@ module Moneybird::Service
     include Moneybird::Traits::Delete
     include Moneybird::Traits::Synchronization
     include Moneybird::Traits::SendInvoice
+    include Moneybird::Traits::MarkAsUncollectible
 
     private
 
