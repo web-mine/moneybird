@@ -43,6 +43,8 @@ module Moneybird::Resource
       sepa_mandate_date
       sepa_mandate_id
       sepa_sequence_type
+      si_identifier
+      si_identifier_type
       tax_number
       tax_number_valid
       tax_number_validated_at
