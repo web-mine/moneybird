@@ -14,6 +14,7 @@ module Moneybird::Resource::Invoice
       period
       price
       product_id
+      project_id
       row_order
       tax_rate_id
       tax_report_reference
