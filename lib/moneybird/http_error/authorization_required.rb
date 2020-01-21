@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class AuthorizationRequired < StandardError
+    class AuthorizationRequired < Faraday::Error
     end
   end
 end

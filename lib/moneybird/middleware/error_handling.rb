@@ -18,7 +18,11 @@ module Moneybird
 
       def on_complete(response)
         key = response[:status].to_i
-        raise ERROR_MAP[key], response if ERROR_MAP.key? key
+        raise ERROR_MAP[key], response_values(response) if ERROR_MAP.key? key
+      end
+
+      def response_values(response)
+        { status: response.status, headers: response.response_headers, body: response.body }
       end
     end
   end

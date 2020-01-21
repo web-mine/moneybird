@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class NotFound < StandardError
+    class NotFound < Faraday::Error
     end
   end
 end

@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class BadRequest < StandardError
+    class BadRequest < Faraday::Error
     end
   end
 end

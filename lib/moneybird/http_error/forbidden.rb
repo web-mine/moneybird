@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class Forbidden < StandardError
+    class Forbidden < Faraday::Error
     end
   end
 end
