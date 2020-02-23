@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class UnprocessableEntity < StandardError
+    class UnprocessableEntity < Faraday::Error
     end
   end
 end

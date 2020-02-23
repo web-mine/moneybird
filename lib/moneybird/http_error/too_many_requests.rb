@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class TooManyRequests < StandardError
+    class TooManyRequests < Faraday::Error
     end
   end
 end

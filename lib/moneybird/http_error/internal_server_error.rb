@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class InternalServerError < StandardError
+    class InternalServerError < Faraday::Error
     end
   end
 end

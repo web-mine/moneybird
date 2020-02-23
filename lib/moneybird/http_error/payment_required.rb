@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class PaymentRequired < StandardError
+    class PaymentRequired < Faraday::Error
     end
   end
 end

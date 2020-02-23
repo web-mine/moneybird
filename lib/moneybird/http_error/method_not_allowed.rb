@@ -1,6 +1,6 @@
 module Moneybird
   module HttpError
-    class MethodNotAllowed < StandardError
+    class MethodNotAllowed < Faraday::Error
     end
   end
 end
