@@ -24,6 +24,10 @@ module Moneybird::Resource
       Moneybird::Service::SalesInvoice.new(@client, id)
     end
 
+    def external_sales_invoices
+      Moneybird::Service::ExternalSalesInvoice.new(@client, id)
+    end
+
     def recurring_sales_invoices
       Moneybird::Service::RecurringSalesInvoice.new(@client, id)
     end
