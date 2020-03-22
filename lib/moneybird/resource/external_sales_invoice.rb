@@ -27,6 +27,14 @@ module Moneybird::Resource
       attachments
       events
       tax_totals
+      total_paid
+      total_unpaid
+      total_unpaid_base
+      prices_are_incl_tax
+      total_price_excl_tax
+      total_price_excl_tax_base
+      total_price_incl_tax
+      total_price_incl_tax_base
     )
 
     def notes=(notes)
