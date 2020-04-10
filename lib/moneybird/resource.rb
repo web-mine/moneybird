@@ -32,6 +32,8 @@ module Moneybird
         if !value.nil?
           if value.is_a?(Array) && value.first.respond_to?(:attributes)
             attributes["#{attribute}_attributes"] = value.map { |item| item.attributes }
+          elsif value.is_a?(Array) && attribute == :custom_fields
+            attributes["#{attribute}_attributes"] = value.map { |item| { id: item[:id], value: item[:value]} }
           elsif value.respond_to?(:attributes)
             attributes["#{attribute}_attributes"] = value.attributes
           else
